@@ -1,5 +1,17 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="bg-zinc-900 text-white h-screen">
+    <NavBar/>
   </div>
 </template>
+
+<script>
+import NavBar from "@/components/NavBar.vue"
+export default {
+  setup() {
+    
+  },
+  components: {
+    NavBar
+  }
+}
+</script>
