@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-zinc-900 text-white h-screen">
+    <div class="bg-zinc-900 text-white h-full">
         <NavBar/>
         <div class="grid grid-cols-3 grid-rows-3 w-full h-fit p-10 space-x-5">
             <div class="row-span-3">

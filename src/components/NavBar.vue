@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex flex-col justify-center items-center h-1/4 space-y-3">
+    <nav class="flex flex-col justify-center items-center h-1/4 space-y-3 py-5">
         <h1 id="title" class="text-5xl font-bold">Quantum Prisoner's Dilemma</h1>
         <div class="flex space-x-6">
             <router-link to="/" :class="currentRoute === 'home'? 'currentRoute' : 'text-zinc-100'">Home</router-link>
