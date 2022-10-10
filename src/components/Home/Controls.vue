@@ -2,11 +2,12 @@
     <div class="flex flex-col items-center gap-2">
         
         <div class="flex flex-col space-y-2">
-            <span class="w-full">
+            <div class="w-full">
                 {{ lang.entanglementLevel }}: 
                 <input v-model="entanglementLevel" type="number" min="0" max="100" class="w-1/6 bg-zinc-700 rounded-md px-2 outline-none out-of-range:bg-[#FF7171] text-right"/>
                  %
-            </span>
+            </div>
+            <Graph :entanglementParameter="entanglementLevel"/>
             <input v-model="entanglementLevel" type="range" min="0" max="100" id="entanglementSlider">
         </div>
 
@@ -57,7 +58,11 @@
 <script>
 import { ref, computed } from "vue";
 import { useStore } from "vuex";
+import Graph from "./Graph.vue";
 export default {
+    components: {
+        Graph,
+    },
     setup() {
         const store = useStore();
         const entanglementLevel = ref(0);
@@ -71,7 +76,7 @@ export default {
         return {
             entanglementLevel,
             setStrategy,
-            lang
+            lang,
         }
     }
 }
