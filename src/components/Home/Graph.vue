@@ -13,7 +13,6 @@
   
 <script>
 import { Line } from "vue-chartjs";
-import { useStore } from "vuex";
 import { watchEffect, computed, ref } from "vue";
 import {
   Chart as ChartJS,
@@ -50,11 +49,11 @@ export default {
         },
         width: {
         type: Number,
-        default: 300
+        default: window.innerWidth/5
         },
         height: {
         type: Number,
-        default: 300
+        default: window.innerHeight/3
         },
         cssClasses: {
         default: '',

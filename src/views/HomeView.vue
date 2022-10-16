@@ -5,13 +5,11 @@
             <div class="row-span-3">
                 <Controls/>
             </div>
-            <div class="row-span-2 col-span-2 border-2 border-white">
-                <!-- <Characters/> -->
-                Characters
+            <div class="row-span-2 col-span-2">
+                <Characters/>
             </div>
-            <div class="col-span-2 border-2 border-white">
+            <div class="col-span-2">
                 <!-- <Results/> -->
-                Results
             </div>
         </div>
     </div>

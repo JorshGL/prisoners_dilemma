@@ -6,8 +6,8 @@ export default createStore({
       lang: 'es',
       entanglementLevel: 0,
       strategy: {
-        playerA: undefined,
-        playerB: undefined
+        playerA: 'C',
+        playerB: 'C'
       }
     },
     lang: {
@@ -24,7 +24,7 @@ export default createStore({
           playerBTitle: "Player B",
           buttons: {
             cooperate: "Cooperate",
-            defect: "Defect",
+            deflect: "Defect",
             quantum: "Quantum"
           },
           rounds: "How many rounds you want to play?",
@@ -44,7 +44,7 @@ export default createStore({
           playerBTitle: "jugador B",
           buttons: {
             cooperate: "Cooperar",
-            defect: "Delatar",
+            deflect: "Delatar",
             quantum: "Cuantico"
           },
           rounds: "¿Cuantas rondas deseas jugar?",
@@ -64,10 +64,10 @@ export default createStore({
       state.settings.entanglementLevel = payload;
     },
     setStrategyPlayerA(state, payload) {
-      state.settings.strategy.playerA = payload.playerA;
+      state.settings.strategy.playerA = payload;
     },
     setStrategyPlayerB(state, payload) {
-      state.settings.strategy.playerB = payload.playerB;
+      state.settings.strategy.playerB = payload;
     }
   },
   actions: {
@@ -75,7 +75,7 @@ export default createStore({
       return commit("setEntanglementLevel", payload);
     },
     async setStrategy({commit}, payload) {
-      payload.player === "A"?
+      payload.player === 'A'?
       commit("setStrategyPlayerA", payload.strategy) :
       commit("setStrategyPlayerB", payload.strategy)
     }

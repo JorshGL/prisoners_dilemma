@@ -14,35 +14,12 @@
         <span class="col-span-2 mt-2 text-lg font-semibold">{{ lang.buttonsTitle }}</span>
         <div class="grid grid-rows-4 grid-cols-2 items-center gap-3  justify-center">
             <div class="col-span-2 flex items-center justify-around self-start"><span>{{ lang.playerATitle }}</span><span>{{ lang.playerBTitle }}</span></div>
-            <button v-on:click="setStrategy('A', 0)" class="p-2 bg-zinc-700 rounded-md">{{ lang.buttons.cooperate }}</button>
-            <button v-on:click="setStrategy('B', 0)" class="p-2 bg-zinc-700 rounded-md">{{ lang.buttons.cooperate }}</button>
-            <button v-on:click="setStrategy('A', 1)" class="p-2 bg-zinc-700 rounded-md">{{ lang.buttons.defect }}</button>
-            <button v-on:click="setStrategy('B', 1)" class="p-2 bg-zinc-700 rounded-md">{{ lang.buttons.defect }}</button>
-            <button v-on:click="setStrategy('A', 2)" :class="[
-                                                        'ease-in-out duration-[380ms] rounded-md p-2',
-                                                        entanglementLevel > 0 && entanglementLevel <= 33? 
-                                                        'text-white shadows1 bg-zinc-700' :
-                                                        entanglementLevel > 33 && entanglementLevel <= 66?
-                                                        'text-white shadows2 bg-zinc-700' :
-                                                        entanglementLevel > 66 && entanglementLevel <= 100?
-                                                        'text-white shadows3 bg-zinc-700' :
-                                                        'text-zinc-500 bg-zinc-800'
-                                                        ]">
-            {{ lang.buttons.quantum }}
-            </button>
-            
-            <button v-on:click="setStrategy('B', 2)" :class="[
-                                                        'ease-in-out duration-[350ms] rounded-md p-2',
-                                                        entanglementLevel > 0 && entanglementLevel <= 33? 
-                                                        'text-white shadows1 bg-zinc-700' :
-                                                        entanglementLevel > 33 && entanglementLevel <= 66?
-                                                        'text-white shadows2 bg-zinc-700' :
-                                                        entanglementLevel > 66 && entanglementLevel <= 100?
-                                                        'text-white shadows3 bg-zinc-700' :
-                                                        'text-zinc-500 bg-zinc-800'
-                                                        ]">
-            {{ lang.buttons.quantum }}
-            </button>
+            <button v-on:click="setStrategy('A', 'C')" :class="['p-2 bg-zinc-700 rounded-md', strategy.playerA === 'C'? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out' : '']">{{ lang.buttons.cooperate }}</button>
+            <button v-on:click="setStrategy('B', 'C')" :class="['p-2 bg-zinc-700 rounded-md', strategy.playerB === 'C'? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out' : '']">{{ lang.buttons.cooperate }}</button>
+            <button v-on:click="setStrategy('A', 'D')" :class="['p-2 bg-zinc-700 rounded-md', strategy.playerA === 'D'? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out' : '']">{{ lang.buttons.deflect }}</button>
+            <button v-on:click="setStrategy('B', 'D')" :class="['p-2 bg-zinc-700 rounded-md', strategy.playerB === 'D'? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out' : '']">{{ lang.buttons.deflect }}</button>
+            <button v-on:click="setStrategy('A', 'Q')" :class="['p-2 bg-zinc-700 rounded-md', strategy.playerA === 'Q'? 'bg-slate-800 shadow-md shadow-[#6EDCD9] transition duration-300 ease-in-out' : '']">{{ lang.buttons.quantum }}</button>
+            <button v-on:click="setStrategy('B', 'Q')" :class="['p-2 bg-zinc-700 rounded-md', strategy.playerB === 'Q'? 'bg-slate-800 shadow-md shadow-[#6EDCD9] transition duration-300 ease-in-out' : '']">{{ lang.buttons.quantum }}</button>
         </div>
 
         <div class="span-2 text-center m-2 flex flex-col gap-2 items-center justify-center">{{ lang.rounds }}
@@ -69,14 +46,14 @@ export default {
         const lang = computed(() => store.getters.getLang.controls)
 
         const setStrategy = (player, strategy) => {
-            store.dispatch("setStrategy", { player: player, strategy: strategy });
-            
+            return store.dispatch("setStrategy", { player: player, strategy: strategy });
         }
 
         return {
             entanglementLevel,
             setStrategy,
             lang,
+            strategy: computed(() => store.state.settings.strategy)
         }
     }
 }
