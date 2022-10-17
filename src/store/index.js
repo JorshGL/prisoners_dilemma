@@ -10,7 +10,9 @@ export default createStore({
         playerB: 'C'
       }
     },
+
     lang: {
+
       en: {
         navbar: {
           title: "Quantum Prisoner's Dilemma",
@@ -23,14 +25,23 @@ export default createStore({
           playerATitle: "Player A",
           playerBTitle: "Player B",
           buttons: {
-            cooperate: "Cooperate",
-            deflect: "Defect",
-            quantum: "Quantum"
+            c: "Cooperate",
+            d: "Defect",
+            q: "Quantum"
           },
           rounds: "How many rounds you want to play?",
           run: "Run",
+        },
+        characters: {
+          title: "YOUR STRATEGY",
+          strategy: {
+            c: "Cooperate",
+            d: "Deflect",
+            q: "Quantum"
+          }
         }
       },
+
       es: {
         navbar: {
           title: "Dilema Cuantico de los prisioneros",
@@ -49,6 +60,14 @@ export default createStore({
           },
           rounds: "¿Cuantas rondas deseas jugar?",
           run: "Correr"
+        },
+        characters: {
+          title: "TU ESTRATEGIA",
+          strategy: {
+            cooperate: "Coopera",
+            deflect: "Delata",
+            quantum: "Cuantico"
+          }
         }
       }
     }

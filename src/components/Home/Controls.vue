@@ -1,10 +1,10 @@
 <template>
     <div class="flex flex-col items-center gap-2">
         
-        <div class="flex flex-col space-y-2">
+        <div class="flex flex-col space-y-2 items-center justify-center text-center">
             <div class="w-full">
                 {{ lang.entanglementLevel }}: 
-                <input v-model="entanglementLevel" type="number" min="0" max="100" class="w-1/6 bg-zinc-700 rounded-md px-2 outline-none out-of-range:bg-[#FF7171] text-right"/>
+                <input v-model="entanglementLevel" type="number" min="0" max="100" class="w-1/3 bg-zinc-700 rounded-md px-2 outline-none out-of-range:bg-[#FF7171] text-right"/>
                  %
             </div>
             <Graph :entanglementParameter="entanglementLevel"/>
@@ -23,7 +23,7 @@
         </div>
 
         <div class="span-2 text-center m-2 flex flex-col gap-2 items-center justify-center">{{ lang.rounds }}
-            <input type="number" class="w-1/6 bg-zinc-700 rounded-md px-2 outline-none text-center"/>
+            <input type="number" class="w-1/3 bg-zinc-700 rounded-md px-2 outline-none text-center"/>
         </div>
 
         <button class="flex items-center justify-center font-bold text-xl text-zinc-800 bg-[#6EDCD9] px-10 py-3 m-2 rounded-md">{{ lang.run }}
