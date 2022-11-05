@@ -73,7 +73,7 @@ export default {
         let timer;
 
         const fetchState = (w) => {
-            fetch("http://localhost:5000/", {
+            fetch("http://localhost:5000/wstate", {
                 body: JSON.stringify({ w: w/100 }),
                 headers: { "Content-Type": "application/json" },
                 mode: "cors",

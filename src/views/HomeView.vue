@@ -9,7 +9,7 @@
                 <Characters/>
             </div>
             <div class="col-span-2">
-                <!-- <Results/> -->
+                <Results/>
             </div>
         </div>
     </div>

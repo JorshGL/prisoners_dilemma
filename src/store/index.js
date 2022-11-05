@@ -4,11 +4,15 @@ export default createStore({
   state: {
     settings: {
       lang: 'es',
-      entanglementLevel: 0,
+      wernerParameter: 0,
       strategy: {
-        playerA: 'C',
-        playerB: 'C'
+        playerA: '0',
+        playerB: '0'
       }
+    },
+    results: {
+      years_playerA: 0,
+      years_playerB: 0
     },
 
     lang: {
@@ -20,7 +24,7 @@ export default createStore({
           about: "About"
         },
         controls: {
-          entanglementLevel: "Entanglement level",
+          wernerParameter: "Werner Parameter",
           buttonsTitle: "Pick your strategy",
           playerATitle: "Player A",
           playerBTitle: "Player B",
@@ -49,7 +53,7 @@ export default createStore({
           about: "Acerca de"
         },
         controls: {
-          entanglementLevel: "Entrelazamiento",
+          wernerParameter: "Parametro W",
           buttonsTitle: "Selecciona tu estrategia",
           playerATitle: "Jugador A",
           playerBTitle: "jugador B",
@@ -87,6 +91,10 @@ export default createStore({
     },
     setStrategyPlayerB(state, payload) {
       state.settings.strategy.playerB = payload;
+    },
+    setResults(state, payload) {
+      state.results.years_playerA = payload.years_playerA
+      state.results.years_playerB = payload.years_playerB
     }
   },
   actions: {
@@ -97,6 +105,26 @@ export default createStore({
       payload.player === 'A'?
       commit("setStrategyPlayerA", payload.strategy) :
       commit("setStrategyPlayerB", payload.strategy)
+    },
+    async run({commit}, payload) {
+      const reqBody = {
+        strategy_pA: payload.strategy.playerA,
+        strategy_pB: payload.strategy.playerB,
+        w: payload.w
+      }
+      const response = await fetch(
+        "http://localhost:5000/years2pay",
+        {
+          method: "POST",
+          mode: "cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(reqBody)
+        }
+      );
+      const result = await response.json();
+      console.log(reqBody);
+      console.log(result);
+      commit("setResults", result);
     }
   },
   modules: {
