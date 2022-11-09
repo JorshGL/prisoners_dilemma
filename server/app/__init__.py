@@ -1,6 +1,6 @@
-from flask import Flask, Response, request
-from flask_cors import CORS
 import json
+from flask_cors import CORS
+from flask import (Flask, Response, request)
 
 def create_app() -> Flask:
     app = Flask(__name__)
@@ -23,7 +23,7 @@ def create_app() -> Flask:
         strategy_pB = data.get('strategy_pB', None)
         w = data.get('w', None)
         
-        if not strategy_pA or not strategy_pB or not w:
+        if not strategy_pA or not strategy_pB or w == None:
             return Response(json.dumps({ 'error': 'Not enough data' }), status=400, headers=RESPONSE_HEADERS)
         
         valA, valB = qis.get_years_to_pay(int(strategy_pA), int(strategy_pB), float(w))

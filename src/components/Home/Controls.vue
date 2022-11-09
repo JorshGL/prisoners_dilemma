@@ -52,7 +52,7 @@ export default {
             return store.dispatch("setStrategy", { player: player, strategy: strategy });
         }
 
-        const run = () => store.dispatch("run", { w: wernerParameter.value, strategy: strategy.value })
+        const run = () => store.dispatch("run", { w: wernerParameter.value/100, strategy: strategy.value })
 
         return {
             wernerParameter,

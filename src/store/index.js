@@ -11,8 +11,8 @@ export default createStore({
       }
     },
     results: {
-      years_playerA: 0,
-      years_playerB: 0
+      years_playerA: null,
+      years_playerB: null
     },
 
     lang: {
@@ -122,7 +122,6 @@ export default createStore({
         }
       );
       const result = await response.json();
-      console.log(reqBody);
       console.log(result);
       commit("setResults", result);
     }

@@ -1,9 +1,10 @@
-from qiskit import QuantumRegister, ClassicalRegister, QuantumCircuit, transpile, Aer
+import numpy as np
 import qiskit.quantum_info as qi
+from qiskit import (Aer, ClassicalRegister, QuantumCircuit, QuantumRegister,
+                    transpile)
 from qiskit.circuit import Parameter
 from qiskit.extensions import UnitaryGate
 from scipy.linalg import expm
-import numpy as np
 
 
 def _werner_circuit_fully_quantum() -> QuantumCircuit:
@@ -112,5 +113,5 @@ def game_strategy_t(tA,tB):
     return C
 
 
-def get_years_to_pay(strategy_pA: int, strategy_pB: int, w: float) -> list[int]:
+def get_years_to_pay(strategy_pA: int, strategy_pB: int, w: float):
     return payoff(run_circuit(strategy_pA, strategy_pB, np.pi/2, w))

@@ -10,14 +10,22 @@
                 </td>
             </tr>
             <tr>
-                <td>¯\_(ツ)_/¯</td>
-                <td>¯\_(ツ)_/¯</td>
+                <td>{{results.years_playerA != null? results.years_playerA : '¯\\_(ツ)_/¯'}}</td>
+                <td>{{results.years_playerB != null? results.years_playerB : '¯\\_(ツ)_/¯'}}</td>
             </tr>
         </table>
 </template>
 
 <script>
+import { computed } from "vue";
+import { useStore } from "vuex";
 export default {
-    
+    setup() {
+        const store = useStore();
+        const results = computed(() => store.state.results)
+        return {
+            results
+        }
+    }
 }
 </script>
