@@ -21,6 +21,7 @@ export default createStore({
           title: "Quantum Prisoner's Dilemma",
           home: "Home",
           about: "About",
+          change: "Change Language",
         },
         controls: {
           wernerParameter: "Werner's Parameter",
@@ -28,20 +29,27 @@ export default createStore({
           playerATitle: "Player A",
           playerBTitle: "Player B",
           buttons: {
-            c: "Cooperate",
-            d: "Betray",
-            q: "Quantum",
+            cooperate: "Cooperate",
+            deflect: "Betray",
+            quantum: "Quantum",
           },
           rounds: "How many rounds would you like to play?",
           run: "Run",
         },
         characters: {
           title: "YOUR STRATEGY",
+          playerATitle: "PLAYER A",
+          playerBTitle: "PLAYER B",
           strategy: {
-            c: "Cooperate",
-            d: "Betray",
-            q: "Quantum",
+            cooperate: "Cooperate",
+            deflect: "Betray",
+            quantum: "Quantum",
           },
+        },
+        results: {
+          title: "Results",
+          playerATitle: "Player A",
+          playerBTitle: "Player B",
         },
       },
 
@@ -50,6 +58,7 @@ export default createStore({
           title: "Dilema Cuántico de los prisioneros",
           home: "Inicio",
           about: "Acerca de",
+          change: "Cambiar idioma",
         },
         controls: {
           wernerParameter: "Parámetro W",
@@ -66,11 +75,18 @@ export default createStore({
         },
         characters: {
           title: "TU ESTRATEGIA",
+          playerATitle: "JUGADOR A",
+          playerBTitle: "JUGADOR B",
           strategy: {
             cooperate: "Coopera",
             deflect: "Delata",
             quantum: "Cuantico",
           },
+        },
+        results: {
+          title: "Resultados",
+          playerATitle: "Jugador A",
+          playerBTitle: "Jugador B",
         },
       },
     },
@@ -93,6 +109,11 @@ export default createStore({
     setResults(state, payload) {
       state.results.years_playerA = payload.years_playerA;
       state.results.years_playerB = payload.years_playerB;
+    },
+    changeLanguage: function (state) {
+      state.settings.lang === "en"
+        ? (state.settings.lang = "es")
+        : (state.settings.lang = "en");
     },
   },
   actions: {
