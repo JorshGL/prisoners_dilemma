@@ -11,9 +11,6 @@
       <div class="col-span-2">
         <Results />
       </div>
-      <div>
-        <button>Hola</button>
-      </div>
     </div>
   </div>
 </template>
