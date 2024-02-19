@@ -21,7 +21,7 @@ export default createStore({
           title: "Quantum Prisoner's Dilemma",
           home: "Home",
           about: "About",
-          change: "Change Language",
+          change: "EN",
         },
         controls: {
           wernerParameter: "Werner's Parameter",
@@ -58,7 +58,7 @@ export default createStore({
           title: "Dilema Cuántico de los prisioneros",
           home: "Inicio",
           about: "Acerca de",
-          change: "Cambiar idioma",
+          change: "ES",
         },
         controls: {
           wernerParameter: "Parámetro W",

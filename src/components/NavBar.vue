@@ -1,7 +1,19 @@
 <template>
-  <nav class="flex flex-col justify-center items-center h-1/4 space-y-3 py-5">
-    <h1 id="title" class="text-5xl font-bold">{{ lang.title }}</h1>
-    <div class="flex space-x-6">
+  <nav class="flex flex-col items-center h-1/4 py-5">
+    <div class="flex justify-center py-0">
+      <h1 id="title" class="text-5xl font-bold justify-center px-3 py-2">
+        {{ lang.title }}
+      </h1>
+
+      <button
+        v-on:click="cambiarIdioma"
+        class="text-2xl m-3 py-2 justify-end font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-blue-500"
+      >
+        {{ lang.change }}
+      </button>
+    </div>
+
+    <div class="flex space-x-6 py-0">
       <router-link
         to="/"
         :class="currentRoute === 'home' ? 'currentRoute' : 'text-zinc-100'"
@@ -12,9 +24,6 @@
         :class="currentRoute === 'about' ? 'currentRoute' : 'text-zinc-100'"
         >{{ lang.about }}</router-link
       >
-      <button v-on:click="cambiarIdioma">
-        <em>{{ lang.change }}</em>
-      </button>
     </div>
   </nav>
 </template>
