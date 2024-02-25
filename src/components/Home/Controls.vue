@@ -27,7 +27,7 @@
     <span class="col-span-2 mt-2 text-l g font-semibold">{{
       lang.buttonsTitle
     }}</span>
-    <div class="grid grid-rows-4 grid-cols-2 items-center gap-3 justify-center">
+    <div class="grid grid-cols-2 items-center gap-3 justify-center">
       <div class="col-span-2 flex items-center justify-around self-start">
         <span>{{ lang.playerATitle }}</span>
         <span>{{ lang.playerBTitle }}</span>
@@ -59,7 +59,7 @@
         :class="[
           'p-2 bg-zinc-700 rounded-md',
           strategy.playerA === '1'
-            ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
+            ? 'bg-slate-800 shadow-md shadow-[#ff7674] transition duration-300 ease-in-out'
             : '',
         ]"
       >
@@ -70,7 +70,7 @@
         :class="[
           'p-2 bg-zinc-700 rounded-md',
           strategy.playerB === '1'
-            ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
+            ? 'bg-slate-800 shadow-md shadow-[#ff7674] transition duration-300 ease-in-out'
             : '',
         ]"
       >
