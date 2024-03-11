@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex flex-col items-center h-1/4 py-5">
+  <nav class="flex flex-col items-center h-1/4 pt-5 pb-2">
     <div class="flex justify-center py-0">
       <h1 id="title" class="text-5xl font-bold justify-center px-3 py-2">
         {{ lang.title }}

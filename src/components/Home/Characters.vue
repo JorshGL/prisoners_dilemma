@@ -62,6 +62,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import { computed } from "vue";
 import { useStore } from "vuex";

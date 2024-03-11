@@ -51,6 +51,11 @@ export default createStore({
           playerATitle: "Player A",
           playerBTitle: "Player B",
         },
+        acknowledgements: {
+          titleOne: "What is it?",
+          titleTwo: "What is it for?",
+          thanksTo: "Special thanks to",
+        },
       },
 
       es: {
@@ -87,6 +92,11 @@ export default createStore({
           title: "Resultados",
           playerATitle: "Jugador A",
           playerBTitle: "Jugador B",
+        },
+        acknowledgements: {
+          titleOne: "¿Qué es?",
+          titleTwo: "¿Para qué sirve?",
+          thanksTo: "Agradecimientos a",
         },
       },
     },
@@ -132,6 +142,17 @@ export default createStore({
         w: payload.w,
       };
       const response = await fetch("http://localhost:5000/years2pay", {
+        method: "POST",
+        mode: "cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(reqBody),
+      });
+      const result = await response.json();
+      console.log(result);
+      commit("setResults", result);
+    },
+    async startServ({ commit }, payload) {
+      const response = await fetch("http://localhost:5000/startServ", {
         method: "POST",
         mode: "cors",
         headers: { "Content-Type": "application/json" },
