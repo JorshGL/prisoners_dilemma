@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import images from "../../../server/app/docs/images.json" assert { type: "json" };
 import { Line } from "vue-chartjs";
 import { watchEffect, computed, ref } from "vue";
 import {
@@ -72,22 +73,15 @@ export default {
     let y = ref([]);
     let timer;
 
-    const fetchState = (w) => {
-      fetch("http://localhost:5000/wstate", {
-        body: JSON.stringify({ w: w }),
-        headers: { "Content-Type": "application/json" },
-        mode: "cors",
-        method: "POST",
-      })
-        .then((res) => res.json())
-        .then((res) => (y.value = Array.from(res.y)));
-    };
-
     watchEffect(() => {
       let w = parseInt(props.entanglementParameter);
       if (timer) clearTimeout(timer);
-      timer = setTimeout(() => fetchState(w), 20);
+      timer = setTimeout(() => fetchState(w), 1);
     });
+
+    const fetchState = (w) => {
+      y.value = images.images[w];
+    };
 
     let chartData = computed(() => {
       return {
@@ -98,7 +92,7 @@ export default {
             borderColor: "#6EDCD9",
             data: [...y.value],
             fill: false,
-            borderWidht: 5,
+            borderWidth: 5,
           },
         ],
       };
