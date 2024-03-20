@@ -1,13 +1,16 @@
 <template>
   <nav class="flex flex-col items-center h-1/4 pt-5 pb-2">
     <div class="flex justify-center py-0">
-      <h1 id="title" class="text-5xl font-bold justify-center px-3 py-2">
+      <h1
+        id="title"
+        class="text-5xl font-bold text-center justify-center pl-4 sm:px-5 py-2"
+      >
         {{ lang.title }}
       </h1>
 
       <button
         v-on:click="cambiarIdioma"
-        class="text-2xl m-3 py-2 justify-end font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-blue-500"
+        class="text-2xl px-5 py-2 justify-end font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-blue-500"
       >
         {{ lang.change }}
       </button>
@@ -58,6 +61,7 @@ export default {
 }
 
 .currentRoute {
+  color: #eeeeee;
   text-shadow: 1.5px 1.5px 1.5px #e15fed;
 }
 </style>

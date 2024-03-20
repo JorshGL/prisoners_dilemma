@@ -1,40 +1,61 @@
 <template>
-  <div class="max-w-xl mx-auto">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
-    <div class="grid grid-rows-3 grid-cols-3 mt-4 text-3xl">
-      <div
-        id="title"
-        class="pt-10 text-cyan-200 col-span-3 font-Lobster w-auto text-center text-6xl font-semibold"
-      >
-        {{ lang.thanksTo }}
-      </div>
+  <!-- Fonts: -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+    rel="stylesheet"
+  />
 
-      <div
-        class="col-span-3 w-auto py-6 text font-bold bg-gradient-to-r from-sky-400 to-slate-300 bg-clip-text text-transparent font-Lobster text-center"
-      >
-        Jorge Gallego
-      </div>
-      <div
-        class="w-auto p-3 font-semibold font-Lobster text-center bg-gradient-to-r py-2 from-blue-500 to-sky-300 bg-clip-text text-transparent"
-      >
-        Sergio Herrera
-      </div>
-      <div
-        class="w-auto p-3 font-semibold font-Lobster text-center bg-gradient-to-t py-2 from-blue-500 to-blue-400 bg-clip-text text-transparent"
-      >
-        Jean Paul Delgado
-      </div>
-      <div
-        class="w-auto p-3 font-semibold font-Lobster text-center bg-gradient-to-l py-2 from-blue-500 to-sky-300 bg-clip-text text-transparent"
-      >
-        Juan David Trujillo
-      </div>
-    </div>
+  <div
+    id="title"
+    class="py-5 col-span-3 font-Lobster text-center text-4xl sm:text-6xl font-semibold"
+  >
+    {{ lang.thanksTo }}
+  </div>
+  <div
+    class="flex-wrap sm:mx-2 sm:my-3 text-center flex text 1xl sm:text-2xl justify-around"
+  >
+    <a
+      class="flex-auto text font-bold bg-gradient-to-r from-slate-500 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-110 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+      href="https://github.com/JorshGL/"
+      target="_blank"
+    >
+      Jorge Gallego
+    </a>
+    <a
+      class="flex-auto text font-bold bg-gradient-to-r from-slate-200 to-slate-400 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-110 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+    >
+      Marcela Herrera
+    </a>
+    <a
+      class="flex-auto text font-bold bg-gradient-to-r from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-110 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+      href="https://github.com/aliss-55"
+      target="_blank"
+    >
+      Allison Tobar
+    </a>
+    <a
+      class="flex-auto text font-bold bg-gradient-to-r from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-110 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+      href="https://github.com/SAHV-24"
+      target="_blank"
+    >
+      Sergio Herrera
+    </a>
+    <a
+      class="flex-auto text font-bold bg-gradient-to-r from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-110 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+      href="https://github.com/paulomeister"
+      target="_blank"
+    >
+      Jean Paul Delgado
+    </a>
+    <a
+      class="flex-auto text font-bold bg-gradient-to-r sm:mx-0 from-slate-200 to-slate-500 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-110 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+      href="https://github.com/juandavid764"
+      target="_blank"
+    >
+      Juan David Trujillo
+    </a>
   </div>
 </template>
 

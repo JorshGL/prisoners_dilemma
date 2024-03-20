@@ -1,7 +1,7 @@
 <template>
   <div class="mt-5">
     <footer class="flex flex-col text-center text-surface">
-      <div class="">
+      <div class="divide-y">
         <div class="flex justify-center space-x-2">
           <a
             target="_blank"
@@ -24,8 +24,10 @@
           </a>
 
           <a
-            href="#!"
+            href="https://github.com/JorshGL/prisoners_dilemma"
+            target="_blank"
             type="button"
+            z
             class="rounded-full bg-transparent p-3 font-medium uppercase leading-normal text-surface hover:scale-75 hover:duration-300 hover:ease-in-out shadow-2xl"
             data-twe-ripple-init
           >

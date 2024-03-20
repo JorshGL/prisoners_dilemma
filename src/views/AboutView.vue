@@ -1,14 +1,23 @@
 <template>
-  <div class="bg-zinc-900 xl:min-h-screen 2xl:min-h-screen relative lg:pb-32">
-    <div class="text-white">
+  <body class="bg-zinc-900">
+    <div class="">
       <NavBar />
     </div>
-    <div class="mt-5"><Body /></div>
-    <div><Acknowledgements /></div>
-    <div class="mt-30 absolute bottom-0 justify-center w-full">
+    <div class="mt-3">
+      <Body />
+    </div>
+    <div class="relative mt-5">
+      <div
+        class="absolute bg-gradient-to-r from-pink-400 to-blue-400 inset-0 rounded-xl blur-md mx-16"
+      ></div>
+      <div class="relative bg-zinc-900 rounded-xl mx-16 pb-6">
+        <Acknowledgements />
+      </div>
+    </div>
+    <div>
       <Footer />
     </div>
-  </div>
+  </body>
 </template>
 
 <script>
@@ -25,4 +34,3 @@ export default {
   },
 };
 </script>
-, Acknoledgements
