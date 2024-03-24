@@ -18,68 +18,41 @@
       class="pt-7 sm:pt-2 grid-rows-1 place-items-center text-center px-4 text-white"
     >
       <h1 class="text-4xl mb-3.5" id="title">{{ lang.titleOne }}</h1>
-      <div class="text-justify px-10">
+      <div class="lg:text-lg text-justify sm:px-40 lg:px-72">
         <p class="">
-          La teoría de juegos cuánticos es un campo que combina los principios
-          de la mecánica cuántica y la teoría de juegos para estudiar
-          estrategías entre agentes. Aunque es un campo relativamente nuevo,
-          existen varios posibles avances futuros y desarrollos que se pueden
-          explorar. Los futuros avances probablemente involucrarán el desarrollo
-          de estrategias cuánticas más complejas y poderosas para los jugadores
-          en los juegos cuánticos. Esto puede incluir la creación de nuevos
-          algoritmos cuánticos, estrategias con entrelazamiento y técnicas para
-          explotar los fenómenos cuánticos. Uno de los juegos más estudiados es
-          el dilema del prisionero, el cual es un modelo útil para analizar una
-          variedad de situaciones de toma de decisiones estratégicas en las que
-          la cooperación y la traición son factores clave.
+          La investigación y divulgación de la computación cuántica ha aumentado
+          en los últimos años, sin embargo
+          <strong>¿cuál es el propósito de esta?</strong><br /><br />Una de las
+          más notorias aplicaciones de esto es en la teoría de juegos. ya que en
+          un futuro no tan lejano, podría optimizar estrategias, mejorar el
+          renderizado de aplicaciones y trabajar muy de la mano con la IA para
+          hacer que el usuario tenga una experiencia más inmersiva.
         </p>
         <br />
         <p>
-          Otro enfoque relevante es la validación experimental de las
-          estrategias cuánticas utilizando los computadores cuánticos que
-          tenemos a disposición hasta el momento. Esto daría un soporte más
-          sólido para la exploración de nuevos desarrollos. En general, este
-          campo puede tener aplicaciones en economía y finanzas, especialmente
-          en modelar mercados financieros complejos y el estudio de
-          interacciones estratégicas entre agentes en el contexto de tecnologías
-          cuánticas. El dilema del prisionero consisten en lo siguiente, dos
-          prisioneros, A y B, sospechosos de cometer un robo juntos, son
-          aislados e instados a confesar. A cada uno le preocupa sólo obtener la
-          pena de prisión más corta posible para sí mismo; cada uno debe decidir
-          si delatar o callar sin conocer la decisión de su compañero. Sin
-          embargo, ambos prisioneros conocen de antemano las consecuencias de
-          sus decisiones: (1) si ambos delatan, ambos van a la cárcel por tres
-          años; (2) si ninguno delata (se quedan callados), ambos van a la
-          cárcel por un año; y (3) si uno delata mientras que el otro no lo
-          hace, el delator queda libre y el que calla va a la cárcel por 5 años.
-          Aunque ninguno de los prisioneros puede estar seguro de lo que hará el
-          otro, sabe que lo mejor que puede hacer para no perder es siempre
-          delatar.
+          Un problema que puede explicar la importancia de la computación
+          cuántica es el
+          <span
+            class="bg-gradient-to-r from-rose-400 to-purple-400 font-bold bg-clip-text text-transparent"
+            >dilema del prisionero</span
+          >, el cual es un modelo útil para analizar una variedad de situaciones
+          de toma de decisiones estratégicas en las que la
+          <strong>cooperación</strong> y <strong>la traición</strong> son
+          factores clave.
         </p>
-        <br />
-        <p>
-          La situación cuando ambos prisioneros delatan se le conoce como
-          equilibrio de Nash. Sin embargo, los dos ladrones llegarían a una
-          situación óptima si ambos adoptaran la estrategia aparentemente
-          irracional de callar; cada uno cumpliría entonces sólo un año en la
-          cárcel. A esta última situación se le conoce como Pareto optimal En el
-          desarrollo de la PEF se va a crear una interfaz para simular el dilema
-          del prisionero cuántico; esto se hará a través de herramientas como
-          Python y visual studio. Para la realización de este proyecto se
-          contará con el apoyo de la docente Alba Marcela Herrera Trujillo. Los
-          integrantes del colectivo no solo pondrán en práctica técnicas de
-          programación sino que desarrollarán habilidades para presentar una
-          nueva forma de comunicar conceptos científicos complejos. Esto no solo
-          representa una innovación en la comunicación científica, sino que
-          también brinda la oportunidad de conectar con audiencias más amplias.
-          Con esta iniciativa, se facilitará el acceso a la simulación del
-          dilema del prisionero cuántico, permitiendo que estudiantes,
-          investigadores y entusiastas de la ciencia participen y experimenten
-          directamente con conceptos cuánticos. Esto permitirá proporcionar una
-          herramienta educativa valiosa donde usuarios de diferentes niveles de
-          conocimiento pueden adentrarse en la complejidad del dilema del
-          prisionero cuántico de manera intuitiva.
-        </p>
+        <h1
+          class="text-3xl font-bold italic bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent"
+        >
+          El Dilema del Prisionero
+        </h1>
+        <div class="flex-auto flex justify-center">
+          <div class="sm:h-48 sm:w-48 ">
+            <img :src="data.img.Prisioner1" alt="Quantum box logo" class="" />
+          </div>
+          <div class="sm:h-48 sm:w-48 ">
+            <img :src="data.img.Prisioner2" alt="Quantum box logo" class="" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -97,6 +70,8 @@ export default {
           UAO: require(`@/assets/UAO.png`),
           Quantum: require(`@/assets/Quantum box.png`),
           Univalle: require(`@/assets/Univalle.png`),
+          Prisioner1: require(`@/assets/prisioner1.png`),
+          Prisioner2: require(`@/assets/prisioner2.jpg`),
         },
       };
     });

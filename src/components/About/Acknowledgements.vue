@@ -9,48 +9,48 @@
 
   <div
     id="title"
-    class="py-5 col-span-3 font-Lobster text-center text-4xl sm:text-6xl font-semibold"
+    class="pt-4 col-span-3 font-Lobster text-center text-4xl sm:text-5xl lg:text-6xl font-semibold"
   >
     {{ lang.thanksTo }}
   </div>
   <div
-    class="flex-wrap sm:mx-2 sm:my-3 text-center flex text 1xl sm:text-2xl justify-around"
+    class="flex-wrap sm:mx-1 sm:my-3 text-center flex text 1xl sm:text-2xl lg:text-3xl justify-around"
   >
     <a
-      class="flex-auto text font-bold bg-gradient-to-r from-slate-500 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-110 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+      class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-500 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
       href="https://github.com/JorshGL/"
       target="_blank"
     >
       Jorge Gallego
     </a>
     <a
-      class="flex-auto text font-bold bg-gradient-to-r from-slate-200 to-slate-400 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-110 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+      class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-400 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
     >
       Marcela Herrera
     </a>
     <a
-      class="flex-auto text font-bold bg-gradient-to-r from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-110 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+      class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
       href="https://github.com/aliss-55"
       target="_blank"
     >
       Allison Tobar
     </a>
     <a
-      class="flex-auto text font-bold bg-gradient-to-r from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-110 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+      class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
       href="https://github.com/SAHV-24"
       target="_blank"
     >
       Sergio Herrera
     </a>
     <a
-      class="flex-auto text font-bold bg-gradient-to-r from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-110 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+      class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
       href="https://github.com/paulomeister"
       target="_blank"
     >
       Jean Paul Delgado
     </a>
     <a
-      class="flex-auto text font-bold bg-gradient-to-r sm:mx-0 from-slate-200 to-slate-500 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-110 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+      class="flex-auto text font-bold bg-gradient-to-r lg:py-3 sm:mx-0 from-slate-200 to-slate-500 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
       href="https://github.com/juandavid764"
       target="_blank"
     >

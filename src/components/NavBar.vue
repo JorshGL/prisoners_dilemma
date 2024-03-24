@@ -57,7 +57,7 @@ export default {
 <style scoped>
 #title {
   color: #eeeeee;
-  text-shadow: 3px 3px 2px #e15fed, -3px -3px 2px #6edcd9;
+  text-shadow: 2px 2px 2px #e15fed;
 }
 
 .currentRoute {
