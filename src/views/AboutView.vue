@@ -8,9 +8,9 @@
     </div>
     <div class="relative mt-7">
       <div
-        class="absolute bg-gradient-to-r from-pink-400 to-blue-400 inset-0 rounded-xl blur-md sm:mx-16 lg:mx-56"
+        class="absolute bg-gradient-to-r from-pink-400 to-blue-400 inset-0 rounded-xl blur-md mx-10 sm:mx-16 lg:mx-80"
       ></div>
-      <div class="relative bg-zinc-900 rounded-xl sm:mx-16 lg:mx-60 pb-6">
+      <div class="relative bg-zinc-900 rounded-xl mx-10 sm:mx-16 lg:mx-80 pb-6">
         <Acknowledgements />
       </div>
     </div>
