@@ -13,14 +13,14 @@
 
                             <SlidesSet v-for="(slide, index) in carouselSlides" :key="index">                                    
                                 <div v-show="currentSlide === index + 1" class="slide-info">
-                                    <img :src="require(`../assets/${slide}.jpg`)" alt=""> 
+                                    <img :src="require(`@/assets/${slide}.jpg`)" alt=""> 
                                 </div>                                                
                             </SlidesSet>
                             
                         </CarouselSet>
                         <i @click="close" type="button" class="far fa-times-circle"></i>
                     </div>                
-                    <button @click="close">Close</button>
+                    <button @click="close">Cerrar</button>
                 </div>
             </transition>
         </div>
@@ -108,7 +108,7 @@
             position: relative;
             max-width: 640px;
             max-height: 80%;
-            width: 80%;
+            width: auto;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             height: auto;
             border-radius: 30px;
@@ -117,7 +117,8 @@
             display: flex;
             flex-direction: column; 
             object-fit: cover;
-            height: 100%;
+            height: auto;
+            width: auto;
             border-radius: 30px;
             
             
@@ -147,6 +148,7 @@
                     display: flex;
                     max-width: 100%;
                     height: auto;
+                    width: auto;
                     object-fit: cover;
                     border-radius: 30px;              
                     
@@ -167,7 +169,7 @@
                 
     
                 &:hover {
-                    color: crimson;
+                    color: #6347c7;
                     
                 }
             }
@@ -181,7 +183,7 @@
                 border: none;
                 border-radius: 30px;
                 font-size: 16px;
-                background-color: crimson;
+                background-color: #6347c7;
                 color: #fff;
                 
                 &:hover {

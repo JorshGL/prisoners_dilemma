@@ -144,11 +144,13 @@ export default {
       });
     };
 
-    const run = () =>
+    const run = () => {
+      store.dispatch("setModalActive")
       store.dispatch("run", {
         w: wernerParameter.value / 100,
         strategy: strategy.value,
-      });
+      })
+    };
 
     return {
       wernerParameter,

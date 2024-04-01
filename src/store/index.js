@@ -2,6 +2,10 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
+    modalwindow: {
+      modalActive: false,
+      secondTime: 1,      
+    },
     settings: {
       lang: "es",
       wernerParameter: 0,
@@ -95,6 +99,9 @@ export default createStore({
     getLang(state) {
       return state.settings.lang === "en" ? state.lang.en : state.lang.es;
     },
+    getModal(state) {
+      return state.modalwindow
+    },
   },
   mutations: {
     setEntanglementLevel(state, payload) {
@@ -115,8 +122,18 @@ export default createStore({
         ? (state.settings.lang = "es")
         : (state.settings.lang = "en");
     },
+    toggleModal: function (state) {
+      if (state.modalwindow.secondTime <= 2) {
+        state.modalwindow.modalActive = !state.modalwindow.modalActive;
+        state.modalwindow.secondTime += 1
+      } 
+      
+    },
   },
   actions: {
+    setModalActive({ commit }) {
+      return commit("toggleModal");
+    },
     async setEntanglementLevel({ commit }, payload) {
       return commit("setEntanglementLevel", payload);
     },
