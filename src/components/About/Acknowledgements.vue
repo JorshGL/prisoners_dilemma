@@ -69,7 +69,7 @@ export default {
     const data = computed(() => {
       return {
         img: {
-          source: require(`@/assets/Quantum box.png`),
+          source: require(`@/assets/logos/Quantum box.png`),
         },
       };
     });

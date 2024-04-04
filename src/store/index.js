@@ -56,6 +56,31 @@ export default createStore({
           titleTwo: "What is it for?",
           thanksTo: "Special thanks to",
         },
+        body: {
+          p1: `<p class=""> The research and dissemination of quantum computing have increased in recent years; however
+            , <strong>what is the purpose of this?</strong><br /><br />One of the most notable applications of this is in 
+            game theory, as in the not-so-distant future, it could optimize strategies, improve application rendering, and
+            work closely with AI to make the user's experience more immersive. </p> <br /> <p> A problem that can explain 
+            the importance of quantum computing is the <span class="bg-gradient-to-r 
+            from-rose-400 to-purple-400 font-bold bg-clip-text text-transparent" >prisoner's dilemma
+            </span >, which is a useful model for analyzing a variety of strategic
+              decision-making situations in which <strong>cooperation</strong> and <strong>betrayal</strong> are key factors. </p>`,
+          p2: `The prisoner's dilemma is a problem in which there are two prisoners who have committed a crime together.`,
+          p3: `Suppose the prisoners are separated and each is told that their sentence will be reduced to 3 years if and only if both <span class="text-rose-400 font-semibold">betray</span> each other.`,
+          p4: ` Otherwise, if both <span class="text-rose-400 font-semibold">remain silent</span>, they will have a sentence of only 1 year in prison.`,
+          p5: `The last case is that if the prisoners give different answers, the sentence for the one who did not betray will be 5 years and the other will go free.`,
+          p6: `If the results are put into a table, we get the following matrix:`,
+          p7: `If we analyze the matrix, what would be the best option? For both prisoners, the best option is to <span class="text-rose-400 italic">betray</span> since both prisoners would be in a <span class="font-semibold italic">better</span> condition than the others, in which they will not risk being imprisoned for 5 years, which is likely if they remain silent.`,
+          p8: `However, thanks to <span class="text-[#00f7ff] italic">quantum theory</span>, the probabilities of obtaining each of these sentences <span class="text-3xl font-bold">change</span>.`,
+          prisioner: "Prisoners",
+          yearOne: "1 year",
+          yearThree: "3 years",
+          yearFive: "5 years",
+          optionOne: "Betray",
+          optionTwo: "Remain Silent",
+          optionThree: "Quantum",
+          free: "Free",
+        },
       },
 
       es: {
@@ -97,6 +122,65 @@ export default createStore({
           titleOne: "¿Qué es?",
           titleTwo: "¿Para qué sirve?",
           thanksTo: "Agradecimientos a",
+        },
+        body: {
+          p1: `<p class="">
+          La investigación y divulgación de la computación cuántica ha aumentado
+          en los últimos años, sin embargo
+          <strong>¿cuál es el propósito de esta?</strong><br /><br />Una de las
+          más notorias aplicaciones de esto es en la teoría de juegos. ya que en
+          un futuro no tan lejano, podría optimizar estrategias, mejorar el
+          renderizado de aplicaciones y trabajar muy de la mano con la IA para
+          hacer que el usuario tenga una experiencia más inmersiva.
+        </p>
+        <br />
+        <p>
+          Un problema que puede explicar la importancia de la computación
+          cuántica es el
+          <span
+            class="bg-gradient-to-r from-rose-400 to-purple-400 font-bold bg-clip-text text-transparent"
+            >dilema del prisionero</span
+          >, el cual es un modelo útil para analizar una variedad de situaciones
+          de toma de decisiones estratégicas en las que la
+          <strong>cooperación</strong> y <strong>la traición</strong> son
+          factores clave.
+        </p>`,
+          p2: `El dilema del prisionero, es un problema en el que hay dos
+              prisioneros que han cometido un crimen juntos.`,
+          p3: `Suponga que los prisioneros son separados y se les dice a
+                    cada uno que su pena será reducida a 3 años si y solo si,
+                    los dos
+                    <span class="text-rose-400 font-semibold">delatan</span>
+                    al otro.`,
+          p4: `
+                    En caso contrario, si los dos
+                    <span class="text-rose-400 font-semibold">callan</span>,
+                    tendrán una pena de tan solo 1 año de prisión.`,
+          p5: `
+                    El último caso es que si los prisioneros tienen respuestas
+                    distintas, la pena del que no delató será de 5 años y el
+                    otro saldrá libre.`,
+          p6: `Si los resultados son puestos en una tabla, obtenemos la
+                  siguiente matriz:`,
+          p7: `Si analizamos la matriz, ¿qué sería lo mejor? Para los dos
+              prisioneros, lo mejor es que
+              <span class="text-rose-400 italic">delataran</span> puesto que los
+              dos prisioneros quedarían en una condición
+              <span class="font-semibold italic">mejor</span> que las demás, en
+              la que no correran el riesgo de ser encarcelados por 5 años, lo
+              cual es probable en caso de que callen.`,
+          p8: `Sin embargo, gracias a la
+              <span class="text-[#00f7ff] italic"> teoría cuántica</span> las
+              probabilidades de obtener cada una de estas condenas
+              <span class="text-3xl font-bold">cambia</span>.`,
+          prisioner: "Prisioneros",
+          yearOne: "1 año",
+          yearThree: "3 años",
+          yearFive: "5 años",
+          optionOne: "Delata",
+          optionTwo: "Calla",
+          optionThree: "Cuántico",
+          free: "Libre",
         },
       },
     },

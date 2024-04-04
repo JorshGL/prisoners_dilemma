@@ -19,34 +19,14 @@
     >
       <h1 class="text-4xl mb-3.5" id="title">{{ lang.titleOne }}</h1>
       <div class="lg:text-xl text-justify sm:px-40 lg:px-56">
-        <p class="">
-          La investigación y divulgación de la computación cuántica ha aumentado
-          en los últimos años, sin embargo
-          <strong>¿cuál es el propósito de esta?</strong><br /><br />Una de las
-          más notorias aplicaciones de esto es en la teoría de juegos. ya que en
-          un futuro no tan lejano, podría optimizar estrategias, mejorar el
-          renderizado de aplicaciones y trabajar muy de la mano con la IA para
-          hacer que el usuario tenga una experiencia más inmersiva.
-        </p>
-        <br />
-        <p>
-          Un problema que puede explicar la importancia de la computación
-          cuántica es el
-          <span
-            class="bg-gradient-to-r from-rose-400 to-purple-400 font-bold bg-clip-text text-transparent"
-            >dilema del prisionero</span
-          >, el cual es un modelo útil para analizar una variedad de situaciones
-          de toma de decisiones estratégicas en las que la
-          <strong>cooperación</strong> y <strong>la traición</strong> son
-          factores clave.
-        </p>
+        <div v-html="lang.body.p1"></div>
         <h1
           class="text-3xl font-bold italic bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent mt-7"
         >
-          El Dilema del Prisionero
+          {{ lang.navbar.title }}
         </h1>
         <div class="flex-auto flex justify-center mb-5">
-          <div class="w-36 h-36 sm:h-48 sm:w-48 mx-5 flex flex-col text-center">
+          <!-- <div class="w-36 h-36 sm:h-48 sm:w-48 mx-5 flex flex-col text-center">
             <img
               :src="data.img.Prisioner1"
               alt="Quantum box logo"
@@ -61,91 +41,74 @@
               class="hover:scale-105 hover:duration-200 duration-200"
             />
             <p>Prisionero 2</p>
-          </div>
+          </div> -->
         </div>
         <div CLASS="mt-10">
           <div>
             <p class="text-center">
-              El dilema del prisionero, es un problema en el que hay dos
-              prisioneros que han cometido un crimen juntos.
+              {{ lang.body.p2 }}
             </p>
-            <br />
-            <div
-              class="text-justify items-center px-16 xl:px-50 2xl:px-96 my-7"
-            >
-              <div class="flex flex-col my-7">
-                <p class="h-auto">
-                  Suponga que los prisioneros son separados y se les dice a cada
-                  uno que su pena será reducida a 5 años si y solo si, los dos
-                  <span class="text-rose-400 font-semibold">delatan</span>
-                  al otro.
-                </p>
-                <div class="flex flex-row justify-center">
-                  <img
-                    :src="data.img.Prisioner1"
-                    alt="Quantum box logo"
-                    class="hover:scale-105 hover:duration-200 duration-200 w-24 lg:w-32 mx-5"
-                  /><img
-                    :src="data.img.Prisioner1"
-                    alt="Quantum box logo"
-                    class="hover:scale-105 hover:duration-200 duration-200 w-24 lg:w-32 mx-5"
-                  />
+            <div>
+              <div
+                class="text-justify items-center px-16 xl:px-50 2xl:px-96 my-7"
+              >
+                <div class="flex flex-col my-7">
+                  <p class="h-auto" v-html="lang.body.p3"></p>
+                  <div class="flex flex-row justify-center">
+                    <img
+                      :src="data.img.Prisioner1"
+                      alt="Quantum box logo"
+                      class="hover:scale-105 hover:duration-200 duration-200 w-24 lg:w-32 mx-5"
+                    /><img
+                      :src="data.img.Prisioner1"
+                      alt="Quantum box logo"
+                      class="hover:scale-105 hover:duration-200 duration-200 w-24 lg:w-32 mx-5"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col my-7">
+                  <p class="h-auto" v-html="lang.body.p4"></p>
+                  <div class="flex flex-row justify-center">
+                    <img
+                      :src="data.img.Prisioner1"
+                      alt="Quantum box logo"
+                      class="hover:animate-spin hover:duration-200 duration-200 w-24 lg:w-32 mx-5"
+                    /><img
+                      :src="data.img.Prisioner1"
+                      alt="Quantum box logo"
+                      class="hover:animate-spin hover:duration-200 duration-200 w-24 lg:w-32 mx-5"
+                    />
+                  </div>
+                </div>
+                <div class="flex flex-col my-7">
+                  <p class="h-auto" v-html="lang.body.p5"></p>
+                  <div class="flex flex-row justify-center">
+                    <img
+                      :src="data.img.Prisioner1"
+                      alt="Quantum box logo"
+                      class="hover:scale-105 hover:duration-200 duration-200 w-24 lg:w-32 mx-5"
+                    /><img
+                      :src="data.img.Prisioner1"
+                      alt="Quantum box logo"
+                      class="hover:scale-105 hover:duration-1000 duration-1000 w-24 lg:w-32 mx-5 hover:animate-ping"
+                    />
+                  </div>
                 </div>
               </div>
-              <div class="flex flex-col my-7">
-                <p class="h-auto">
-                  En caso contrario, si los dos
-                  <span class="text-rose-400 font-semibold">callan</span>,
-                  tendrán una pena de tan solo 1 año de prisión.
-                </p>
-                <div class="flex flex-row justify-center">
-                  <img
-                    :src="data.img.Prisioner1"
-                    alt="Quantum box logo"
-                    class="hover:animate-spin hover:duration-200 duration-200 w-24 lg:w-32 mx-5"
-                  /><img
-                    :src="data.img.Prisioner1"
-                    alt="Quantum box logo"
-                    class="hover:animate-spin hover:duration-200 duration-200 w-24 lg:w-32 mx-5"
-                  />
-                </div>
-              </div>
-              <div class="flex flex-col my-7">
-                <p class="h-auto">
-                  El último caso es que si los prisioneros tienen respuestas
-                  distintas, un prisionero delató y el otro calló, entonces la
-                  pena del que calló será de 20 años y el otro saldrá libre.
-                </p>
-                <div class="flex flex-row justify-center">
-                  <img
-                    :src="data.img.Prisioner1"
-                    alt="Quantum box logo"
-                    class="hover:scale-105 hover:duration-200 duration-200 w-24 lg:w-32 mx-5"
-                  /><img
-                    :src="data.img.Prisioner1"
-                    alt="Quantum box logo"
-                    class="hover:scale-105 hover:duration-1000 duration-1000 w-24 lg:w-32 mx-5 hover:animate-ping"
-                  />
-                </div>
+              <div>
+                <p class="text-center" v-html="lang.body.p6"></p>
               </div>
             </div>
-            <P CLASS="text-center"
-              >Si los resultados son puestos en una tabla, obtenemos la
-              siguiente matriz:
-            </P>
-            <div>
-              <table class="border-collapse rounded-md border border-slate-300">
-                <thead>
-                  <th class="border border-slate-300">Jugador 1</th>
-                </thead>
-                <tr>
-                  <th class="border border-slate-300">b</th>
-                  <th class="border border-slate-300">b</th>
-                </tr>
-                <tr>
-                  <th class="border border-slate-300">c</th>
-                </tr>
-              </table>
+            <div class="mt-4 flex justify-center">
+              <Matrix />
+            </div>
+            <p
+              class="text-justify items-center px-16 xl:px-50 2xl:px-96 my-7"
+              v-html="lang.body.p7"
+            ></p>
+            <div class="mt-3">
+              <p v-html="lang.body.p8"></p>
+              <div class="mt-5 flex justify-center"><QuantumMatrix /></div>
             </div>
           </div>
         </div>
@@ -157,21 +120,27 @@
 <script>
 import { computed } from "vue";
 import { useStore } from "vuex";
+import QuantumMatrix from "./QuanticMatrix.vue";
+import Matrix from "./Matrix.vue";
 export default {
+  components: {
+    Matrix,
+    QuantumMatrix,
+  },
   setup() {
     const store = useStore();
     const data = computed(() => {
       return {
         img: {
-          UAO: require(`@/assets/UAO.png`),
-          Quantum: require(`@/assets/Quantum box.png`),
-          Univalle: require(`@/assets/Univalle.png`),
-          Prisioner1: require(`@/assets/prisioner1.png`),
-          Prisioner2: require(`@/assets/prisioner2.jpg`),
+          UAO: require(`@/assets/logos/UAO.png`),
+          Quantum: require(`@/assets/logos/Quantum box.png`),
+          Univalle: require(`@/assets/logos/Univalle.png`),
+          Prisioner1: require(`@/assets/prisioners/prisioner1.png`),
+          Prisioner2: require(`@/assets//prisioners/prisioner2.jpg`),
         },
       };
     });
-    const lang = computed(() => store.getters.getLang.acknowledgements);
+    const lang = computed(() => store.getters.getLang);
     return {
       data,
       lang,
@@ -188,5 +157,15 @@ export default {
 
 .currentRoute {
   text-shadow: 1.5px 1.5px 1.5px #e15fed;
+}
+#asd::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: url(https://api.iconify.design/eos-icons:atom-electron.svg?color=%23ffffff)
+    no-repeat;
+  background-size: cover;
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
 }
 </style>
