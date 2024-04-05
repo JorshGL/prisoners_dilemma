@@ -1,19 +1,5 @@
 <template>
   <div class="grid grid-cols-1">
-    <div class="grid grid-rows-1 place-content-center">
-      <div class="flex h-32 sm:h-52">
-        <div class="pt-4 w-24 mx-1 sm:w-44 sm:h-44 sm:mx-10">
-          <img :src="data.img.UAO" alt="" />
-        </div>
-        <div class="w-32 mx-1 sm:w-52 sm:mx-10">
-          <img :src="data.img.Quantum" alt="Quantum box logo" class="" />
-        </div>
-        <div class="w-16 h-16 pt-4 mx-1 sm:w-32 sm:h-32 sm:mx-10">
-          <img :src="data.img.Univalle" alt="Quantum box logo" class="" />
-        </div>
-      </div>
-    </div>
-
     <div
       class="pt-7 sm:pt-2 grid-rows-1 place-items-center text-center px-4 text-white"
     >
@@ -50,7 +36,7 @@
             </p>
             <div>
               <div
-                class="text-justify items-center px-16 xl:px-50 2xl:px-96 my-7"
+                class="text-justify items-center px-16 xl:px-50 2xl:px-60 my-7"
               >
                 <div class="flex flex-col my-7">
                   <p class="h-auto" v-html="lang.body.p3"></p>
@@ -109,6 +95,27 @@
             <div class="mt-3">
               <p v-html="lang.body.p8"></p>
               <div class="mt-5 flex justify-center"><QuantumMatrix /></div>
+            </div>
+            <div class="grid grid-rows-1 place-content-center">
+              <div class="flex h-32 sm:h-52">
+                <div class="pt-4 w-24 mx-1 sm:w-44 sm:h-44 sm:mx-10">
+                  <img :src="data.img.UAO" alt="" />
+                </div>
+                <div class="w-32 mx-1 sm:w-52 sm:mx-10">
+                  <img
+                    :src="data.img.Quantum"
+                    alt="Quantum box logo"
+                    class=""
+                  />
+                </div>
+                <div class="w-16 h-16 pt-4 mx-1 sm:w-32 sm:h-32 sm:mx-10">
+                  <img
+                    :src="data.img.Univalle"
+                    alt="Quantum box logo"
+                    class=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

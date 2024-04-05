@@ -77,7 +77,7 @@ export default createStore({
           yearThree: "3 years",
           yearFive: "5 years",
           optionOne: "Betray",
-          optionTwo: "Remain Silent",
+          optionTwo: "Silent",
           optionThree: "Quantum",
           free: "Free",
         },
@@ -124,14 +124,24 @@ export default createStore({
           thanksTo: "Agradecimientos a",
         },
         body: {
-          p1: `<p class="">
-          La investigación y divulgación de la computación cuántica ha aumentado
-          en los últimos años, sin embargo
-          <strong>¿cuál es el propósito de esta?</strong><br /><br />Una de las
-          más notorias aplicaciones de esto es en la teoría de juegos. ya que en
-          un futuro no tan lejano, podría optimizar estrategias, mejorar el
-          renderizado de aplicaciones y trabajar muy de la mano con la IA para
-          hacer que el usuario tenga una experiencia más inmersiva.
+          p1: `
+          
+          <div class='flex flex-col justify-center text-5xl my-10 '>
+
+          <div class='flex justify-center'><p>Las computadoras cuánticas son poderosas, pero...</p></div>
+          <div class='flex justify-center'><strong class="text-8xl italic mt-2 bg-clip-text font-bold text-transparent bg-gradient-to-r py-2 from-sky-500 to-sky-200">¿sabes cuánto?</strong></p></div>
+          </div>
+          
+          <p>
+          Hace más de 40 años Paul Benioff introdujo una expresión denominada <span class='italic'>'Computación Cuántica'</span>. 43 años más tarde, La computación cuántica 
+          es reconocida como la relación entre la informática, las matemáticas y la teoría cuántica que <strong class='text-xl italic'>podrá cambiar el mundo</strong>. </p><br/>
+          
+<p>
+          Son capaces 
+          de ejecutar en segundos algoritmos que tomarían DECADAS en sistemas convencionales, capaces de optimizar estrategias de los juegos más complicados, 
+          pueden mejorar la seguridad bancaria y monetaria en el mundo; renderizar gráficos a gran escala permitiendo que los juegos
+           se conviertan en una realidad más allá de una PANTALLA 
+          e incluso trabajar de la mano con aquello que está revolucionando el mundo: <span class='italic text-sky-400'><strong> La Inteligencia Artificial </strong></span>.
         </p>
         <br />
         <p>
