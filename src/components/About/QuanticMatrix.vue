@@ -38,7 +38,7 @@
           alt="Quantum box logo"
           class="flex-auto inset-0 w-24 lg:w-32 mx-5"
         />
-        <p CLASS="text-rose-400 font-semibold">{{ lang.optionThree }}</p>
+        <p CLASS="text-rose-400 font-semibold">{{ lang.optionOne }}</p>
       </td>
 
       <td class="border-[2px] border-slate-300 p-2">

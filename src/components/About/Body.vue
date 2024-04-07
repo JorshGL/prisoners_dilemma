@@ -1,13 +1,11 @@
 <template>
   <div class="grid grid-cols-1">
-    <div
-      class="pt-7 sm:pt-2 grid-rows-1 place-items-center text-center px-4 text-white"
-    >
+    <div class="grid-rows-1 place-items-center text-center px-4 text-white">
       <h1 class="text-4xl mb-3.5" id="title">{{ lang.titleOne }}</h1>
-      <div class="lg:text-xl text-justify sm:px-40 lg:px-56">
+      <div class="lg:text-xl text-justify sm:px-36">
         <div v-html="lang.body.p1"></div>
         <h1
-          class="text-3xl font-bold italic bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent mt-7"
+          class="text-3xl font-bold italic bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent"
         >
           {{ lang.navbar.title }}
         </h1>
@@ -29,7 +27,7 @@
             <p>Prisionero 2</p>
           </div> -->
         </div>
-        <div CLASS="mt-10">
+        <div CLASS="mt-10 px-12">
           <div>
             <p class="text-center">
               {{ lang.body.p2 }}
@@ -44,11 +42,11 @@
                     <img
                       :src="data.img.Prisioner1"
                       alt="Quantum box logo"
-                      class="hover:scale-105 hover:duration-200 duration-200 w-24 lg:w-32 mx-5"
+                      class="w-24 lg:w-32 mx-5"
                     /><img
                       :src="data.img.Prisioner1"
                       alt="Quantum box logo"
-                      class="hover:scale-105 hover:duration-200 duration-200 w-24 lg:w-32 mx-5"
+                      class="w-24 lg:w-32 mx-5"
                     />
                   </div>
                 </div>
@@ -72,7 +70,7 @@
                     <img
                       :src="data.img.Prisioner1"
                       alt="Quantum box logo"
-                      class="hover:scale-105 hover:duration-200 duration-200 w-24 lg:w-32 mx-5"
+                      class="w-24 lg:w-32 mx-5"
                     /><img
                       :src="data.img.Prisioner1"
                       alt="Quantum box logo"
