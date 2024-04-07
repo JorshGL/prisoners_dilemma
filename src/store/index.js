@@ -59,11 +59,10 @@ export default createStore({
         body: {
           p1: `
           
-          <div class='flex flex-col justify-center text-5xl my-5 '>
-
-          <div class='indent-12 flex justify-center text-center font-semibold'><p>Quantum Computers Are Powerful,<br/> but...</p></div>
+          <div class='flex flex-col justify-center text-3xl lg:text-5xl my-5'>
+          <div class='lg:indent-12 flex justify-center text-center font-semibold'><p>Quantum Computers Are Powerful,<br/> but...</p></div>
             <div class='flex justify-center text-center'>
-            <strong class="text-8xl italic bg-clip-text font-bold text-transparent bg-gradient-to-r py-2 from-sky-500 to-sky-200">
+            <strong class="text-5xl lg:text-8xl italic bg-clip-text font-bold text-transparent bg-gradient-to-r py-2 from-sky-500 to-sky-200">
             How much?
             </strong>
             </div>
@@ -111,7 +110,7 @@ export default createStore({
           <span class="text-[#00f7ff] italic"> quantum theory</span>, the
           probabilities of obtaining each of these sentences
           <span class="text-3xl font-bold italic">change</span>.`,
-          prisioner: "Prisoners",
+          prisoner: "Prisoners",
           yearOne: "1 year",
           yearThree: "3 years",
           yearFive: "5 years",
@@ -165,11 +164,11 @@ export default createStore({
         body: {
           p1: `
           
-          <div class='flex flex-col justify-center text-5xl my-5 '>
+          <div class='flex flex-col justify-center text-3xl lg:text-5xl my-5 '>
 
           <div class='flex justify-center text-center font-semibold'><p>Las computadoras cuánticas son poderosas, pero...</p></div>
           <div class='flex justify-center'>
-            <strong class="text-8xl italic mt-2 bg-clip-text font-bold text-transparent bg-gradient-to-r py-2 from-sky-500 to-sky-200">
+            <strong class="lg:text-8xl text-5xl italic mt-2 bg-clip-text font-bold text-transparent bg-gradient-to-r py-2 from-sky-500 to-sky-200 text-center ">
             ¿Qué tanto?
             </strong>
             </div>
@@ -224,8 +223,8 @@ export default createStore({
           p8: `Sin embargo, gracias a la
               <span class="text-[#00f7ff] italic"> teoría cuántica</span> las
               probabilidades de obtener cada una de estas condenas
-              <span class="text-3xl font-bold italic">cambia</span>.`,
-          prisioner: "Prisioneros",
+              <span class="text-3xl font-bold italic">cambian</span>.`,
+          prisoner: "Prisioneros",
           yearOne: "1 año",
           yearThree: "3 años",
           yearFive: "5 años",

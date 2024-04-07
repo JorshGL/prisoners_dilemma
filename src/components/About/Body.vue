@@ -5,7 +5,7 @@
       <div class="lg:text-xl text-justify sm:px-36">
         <div v-html="lang.body.p1"></div>
         <h1
-          class="text-3xl font-bold italic bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent"
+          class="text-2xl text-center lg:text-3xl font-bold italic bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent"
         >
           {{ lang.navbar.title }}
         </h1>
@@ -27,7 +27,7 @@
             <p>Prisionero 2</p>
           </div> -->
         </div>
-        <div CLASS="mt-10 px-12">
+        <div CLASS="mt-6 ">
           <div>
             <p class="text-center">
               {{ lang.body.p2 }}
@@ -65,7 +65,7 @@
                   </div>
                 </div>
                 <div class="flex flex-col my-7">
-                  <p class="h-auto" v-html="lang.body.p5"></p>
+                  <p class="h-auto text-left" v-html="lang.body.p5"></p>
                   <div class="flex flex-row justify-center">
                     <img
                       :src="data.img.Prisioner1"
@@ -94,27 +94,6 @@
               <p v-html="lang.body.p8"></p>
               <div class="mt-5 flex justify-center"><QuantumMatrix /></div>
             </div>
-            <div class="grid grid-rows-1 place-content-center">
-              <div class="flex h-32 sm:h-52">
-                <div class="pt-4 w-24 mx-1 sm:w-44 sm:h-44 sm:mx-10">
-                  <img :src="data.img.UAO" alt="" />
-                </div>
-                <div class="w-32 mx-1 sm:w-52 sm:mx-10">
-                  <img
-                    :src="data.img.Quantum"
-                    alt="Quantum box logo"
-                    class=""
-                  />
-                </div>
-                <div class="w-16 h-16 pt-4 mx-1 sm:w-32 sm:h-32 sm:mx-10">
-                  <img
-                    :src="data.img.Univalle"
-                    alt="Quantum box logo"
-                    class=""
-                  />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -127,6 +106,7 @@ import { computed } from "vue";
 import { useStore } from "vuex";
 import QuantumMatrix from "./QuanticMatrix.vue";
 import Matrix from "./Matrix.vue";
+
 export default {
   components: {
     Matrix,
@@ -137,9 +117,6 @@ export default {
     const data = computed(() => {
       return {
         img: {
-          UAO: require(`@/assets/logos/UAO.png`),
-          Quantum: require(`@/assets/logos/Quantum box.png`),
-          Univalle: require(`@/assets/logos/Univalle.png`),
           Prisioner1: require(`@/assets/prisioners/prisioner1.png`),
           Prisioner2: require(`@/assets//prisioners/prisioner2.jpg`),
         },
