@@ -49,11 +49,11 @@ export default {
         },
         width: {
         type: Number,
-        default: window.innerWidth/5
+        //default: window.innerWidth/5
         },
         height: {
         type: Number,
-        default: window.innerHeight/3
+        //default: window.innerHeight/3
         },
         cssClasses: {
         default: '',

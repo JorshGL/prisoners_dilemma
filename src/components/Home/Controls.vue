@@ -1,10 +1,12 @@
 <template>
-  <div class="flex flex-col items-center gap-2">
+  <div class="grid grid-cols-1 items-center gap-2 md:flex md:flex-col">
+    <!-- Div controls -->
     <div
-      class="flex flex-col space-y-2 items-center justify-center text-center"
+      class="row-start-1 md:flex md:flex-col space-y-2 items-center justify-center text-center"
     >
-      <div class="w-full">
+      <div class="w-full text-xs">
         {{ lang.wernerParameter }}:
+        <!-- Textfield Porcentaje -->
         <input
           v-model="wernerParameter"
           type="number"
@@ -14,94 +16,105 @@
         />
         %
       </div>
-      <Graph :entanglementParameter="wernerParameter" />
-      <input
+      <!-- Dimensiones Graph -->
+      <div class = "md:h-40 md:w-40">
+        <Graph :entanglementParameter="wernerParameter" />
+      </div>
+        <input class=""
         v-model="wernerParameter"
         type="range"
         min="0"
         max="100"
         id="entanglementSlider"
-      />
-    </div>
+        />
 
-    <span class="col-span-2 mt-2 text-l g font-semibold">{{
-      lang.buttonsTitle
-    }}</span>
-    <div class="grid grid-rows-4 grid-cols-2 items-center gap-3 justify-center">
-      <div class="col-span-2 flex items-center justify-around self-start">
-        <span>{{ lang.playerATitle }}</span>
-        <span>{{ lang.playerBTitle }}</span>
+    </div>
+    <div class="m-5 row-start-2 h-full text-center flex flex-col justify-center">
+      <!-- Selecciona tu estrategia -->
+      <span class="text-xs font-semibold md:col-span-2 ">{{
+        lang.buttonsTitle
+      }}</span>
+      
+    
+      <div class="gap-4 justify-center grid grid-cols-2 items-center md:gap-3 ">
+        <!-- Juadator A y B -->
+        <div class="pt-3 col-span-2 flex items-center justify-around self-start ">
+          <span class="text-xs">{{ lang.playerATitle }}</span>
+          <span class="text-xs">{{ lang.playerBTitle }}</span>
+        </div>
+        <!-- Botones cooperar -->
+        <button
+          v-on:click="setStrategy('A', '0')"
+          :class="[
+            'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7',
+            strategy.playerA === '0'
+              ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
+              : '',
+          ]"
+        >
+          {{ lang.buttons.cooperate }}
+        </button>
+        <button
+          v-on:click="setStrategy('B', '0')"
+          :class="[
+            'text-xs p-1 bg-zinc-700 rounded-md h-10 sm:h-15 md:h-7',
+            strategy.playerB === '0'
+              ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
+              : '',
+          ]"
+        >
+          {{ lang.buttons.cooperate }}
+        </button>
+        <button
+          v-on:click="setStrategy('A', '1')"
+          :class="[
+            'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7',
+            strategy.playerA === '1'
+              ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
+              : '',
+          ]"
+        >
+          {{ lang.buttons.deflect }}
+        </button>
+        <button
+          v-on:click="setStrategy('B', '1')"
+          :class="[
+            'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7',
+            strategy.playerB === '1'
+              ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
+              : '',
+          ]"
+        >
+          {{ lang.buttons.deflect }}
+        </button>
+        <button
+          v-on:click="setStrategy('A', '-1')"
+          :class="[
+            'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7',
+            strategy.playerA === '-1'
+              ? 'bg-slate-800 shadow-md shadow-[#6EDCD9] transition duration-300 ease-in-out'
+              : '',
+          ]"
+        >
+          {{ lang.buttons.quantum }}
+        </button>
+        <button
+          v-on:click="setStrategy('B', '-1')"
+          :class="[
+            'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7',
+            strategy.playerB === '-1'
+              ? 'bg-slate-800 shadow-md shadow-[#6EDCD9] transition duration-300 ease-in-out'
+              : '',
+          ]"
+        >
+          {{ lang.buttons.quantum }}
+        </button>
       </div>
-      <button
-        v-on:click="setStrategy('A', '0')"
-        :class="[
-          'p-2 bg-zinc-700 rounded-md',
-          strategy.playerA === '0'
-            ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
-            : '',
-        ]"
-      >
-        {{ lang.buttons.cooperate }}
-      </button>
-      <button
-        v-on:click="setStrategy('B', '0')"
-        :class="[
-          'p-2 bg-zinc-700 rounded-md',
-          strategy.playerB === '0'
-            ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
-            : '',
-        ]"
-      >
-        {{ lang.buttons.cooperate }}
-      </button>
-      <button
-        v-on:click="setStrategy('A', '1')"
-        :class="[
-          'p-2 bg-zinc-700 rounded-md',
-          strategy.playerA === '1'
-            ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
-            : '',
-        ]"
-      >
-        {{ lang.buttons.deflect }}
-      </button>
-      <button
-        v-on:click="setStrategy('B', '1')"
-        :class="[
-          'p-2 bg-zinc-700 rounded-md',
-          strategy.playerB === '1'
-            ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
-            : '',
-        ]"
-      >
-        {{ lang.buttons.deflect }}
-      </button>
-      <button
-        v-on:click="setStrategy('A', '-1')"
-        :class="[
-          'p-2 bg-zinc-700 rounded-md',
-          strategy.playerA === '-1'
-            ? 'bg-slate-800 shadow-md shadow-[#6EDCD9] transition duration-300 ease-in-out'
-            : '',
-        ]"
-      >
-        {{ lang.buttons.quantum }}
-      </button>
-      <button
-        v-on:click="setStrategy('B', '-1')"
-        :class="[
-          'p-2 bg-zinc-700 rounded-md',
-          strategy.playerB === '-1'
-            ? 'bg-slate-800 shadow-md shadow-[#6EDCD9] transition duration-300 ease-in-out'
-            : '',
-        ]"
-      >
-        {{ lang.buttons.quantum }}
-      </button>
     </div>
 
+    <!--  -->
     <div
-      class="span-2 text-center m-2 flex flex-col gap-2 items-center justify-center"
+      class="col-start-1 col-span-2 text-center m-2 gap-0 items-center justify-center md:gap-2 md:flex md:flex-col md:span-2 "
     >
       {{ lang.rounds }}
       <input
@@ -111,9 +124,10 @@
       />
     </div>
 
+    <!-- Run Button -->
     <button
       v-on:click="run"
-      class="flex items-center justify-center font-bold text-xl text-zinc-800 bg-[#6EDCD9] px-10 py-3 m-2 rounded-md"
+      class="col-start-1 col-span-2  flex items-center justify-center font-bold text-xl text-zinc-800 bg-[#6EDCD9] px-10 py-3 m-2 rounded-md"
     >
       {{ lang.run }}
       <svg width="32" height="32" viewBox="0 0 24 24">

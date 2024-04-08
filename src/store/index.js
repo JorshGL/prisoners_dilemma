@@ -55,7 +55,7 @@ export default createStore({
 
       es: {
         navbar: {
-          title: "Dilema Cuántico de los prisioneros",
+          title: "Dilema Cuántico de los Prisioneros",
           home: "Inicio",
           about: "Acerca de",
           change: "ES",

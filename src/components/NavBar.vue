@@ -1,13 +1,13 @@
 <template>
   <nav class="flex flex-col items-center h-1/4 py-5">
     <div class="flex justify-center py-0">
-      <h1 id="title" class="text-5xl font-bold justify-center px-3 py-2">
+      <h1 id="title" class="font-bold text-sm justify-center px-3 py-2 sm:text-3xl md:text-4xl">
         {{ lang.title }}
       </h1>
 
       <button
         v-on:click="cambiarIdioma"
-        class="text-2xl m-3 py-2 justify-end font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-blue-500"
+        class="text-xs ml-3 py-2 justify-end font-semibold  bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-blue-500 sm:text-3xl md:text-4xl"
       >
         {{ lang.change }}
       </button>
@@ -54,7 +54,7 @@ export default {
 <style scoped>
 #title {
   color: #eeeeee;
-  text-shadow: 3px 3px 2px #e15fed, -3px -3px 2px #6edcd9;
+  text-shadow: 2px 2px 2px #e15fed;
 }
 
 .currentRoute {
