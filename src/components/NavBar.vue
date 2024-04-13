@@ -58,6 +58,7 @@ export default {
 }
 
 .currentRoute {
+  color: #eeeeee;
   text-shadow: 1.5px 1.5px 1.5px #e15fed;
 }
 </style>

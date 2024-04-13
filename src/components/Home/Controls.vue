@@ -70,7 +70,7 @@
           :class="[
             'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7',
             strategy.playerA === '1'
-              ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
+              ? 'bg-slate-800 shadow-md shadow-[#ff7674] transition duration-300 ease-in-out'
               : '',
           ]"
         >
@@ -81,7 +81,7 @@
           :class="[
             'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7',
             strategy.playerB === '1'
-              ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
+              ? 'bg-slate-800 shadow-md shadow-[#ff7674] transition duration-300 ease-in-out'
               : '',
           ]"
         >
