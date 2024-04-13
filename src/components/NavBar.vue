@@ -13,7 +13,7 @@
       </button>
     </div>
 
-    <div class="flex space-x-6 py-0 text-xs">
+    <div class="flex space-x-6 py-0 text-xs md:text-base lg:text-lg">
       <router-link
         to="/"
         :class="currentRoute === 'home' ? 'currentRoute' : 'text-zinc-100'"
