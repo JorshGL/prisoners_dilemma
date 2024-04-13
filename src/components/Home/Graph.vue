@@ -1,5 +1,5 @@
 <template>
-    <Line
+        <Line
       :chart-options="chartOptions"
       :chart-data="chartData"
       :chart-id="chartId"

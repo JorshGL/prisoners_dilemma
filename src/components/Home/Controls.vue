@@ -4,9 +4,9 @@
     <div
       class="row-start-1 md:flex md:flex-col space-y-2 items-center justify-center text-center"
     >
-      <div class="w-full text-xs">
+      <div class="font-semibold w-full md:text-base text-sm">
         {{ lang.wernerParameter }}:
-        <!-- Textfield Porcentaje -->
+        <!-- iput Porcentaje -->
         <input
           v-model="wernerParameter"
           type="number"
@@ -31,7 +31,7 @@
     </div>
     <div class="m-5 row-start-2 h-full text-center flex flex-col justify-center">
       <!-- Selecciona tu estrategia -->
-      <span class="text-xs font-semibold md:col-span-2 ">{{
+      <span class="text-sm font-semibold md:col-span-2 md:text-base  ">{{
         lang.buttonsTitle
       }}</span>
       
@@ -46,7 +46,7 @@
         <button
           v-on:click="setStrategy('A', '0')"
           :class="[
-            'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7',
+            'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7 md:w-24 lg:w-32',
             strategy.playerA === '0'
               ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
               : '',
@@ -114,7 +114,7 @@
 
     <!--  -->
     <div
-      class="col-start-1 col-span-2 text-center m-2 gap-0 items-center justify-center md:gap-2 md:flex md:flex-col md:span-2 "
+      class="font-semibold col-start-1 col-span-2 text-center m-2 gap-0 items-center justify-center md:gap-2 md:flex md:flex-col md:span-2 "
     >
       {{ lang.rounds }}
       <input
