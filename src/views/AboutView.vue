@@ -1,9 +1,9 @@
 <template>
   <body class="bg-zinc-900">
-    <div class="">
+    <div class="sahv">
       <NavBar />
     </div>
-    <div class="mt-3">
+    <div class="">
       <Body />
     </div>
     <div class="my-16">
@@ -30,6 +30,7 @@ import Body from "@/components/About/Body.vue";
 import Footer from "@/components/Footer.vue";
 import Acknowledgements from "@/components/About/Acknowledgements.vue";
 import Universities from "@/components/About/Universities.vue";
+
 export default {
   components: {
     NavBar,

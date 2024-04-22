@@ -14,7 +14,7 @@
         />
         %
       </div>
-      <Graph :entanglementParameter="wernerParameter" />
+      <div><Graph :entanglementParameter="wernerParameter" /></div>
       <input
         v-model="wernerParameter"
         type="range"

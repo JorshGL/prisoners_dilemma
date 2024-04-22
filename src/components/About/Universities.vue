@@ -1,5 +1,10 @@
 <template>
-  <div class="grid grid-rows-1 place-content-center">
+  <div class="flex justify-center">
+    <p class="text-slate-100 text-2xl font-bold">
+      {{ lang.acknowledgements.universities }}
+    </p>
+  </div>
+  <div class="mt-4 grid grid-rows-1 place-content-center">
     <div class="flex h-32 sm:h-52">
       <div class="pt-4 w-24 mx-1 sm:w-44 sm:h-44 sm:mx-10">
         <img :src="data.img.UAO" alt="" />
@@ -22,6 +27,7 @@ export default {
   components: {},
   setup() {
     const store = useStore();
+    const lang = computed(() => store.getters.getLang);
     const data = computed(() => {
       return {
         img: {
@@ -33,6 +39,7 @@ export default {
     });
     return {
       data,
+      lang,
     };
   },
 };
