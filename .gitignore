@@ -7,6 +7,9 @@ quantum-env
 .env.local
 .env.*.local
 
+/dilemmaenv
+server/app/env/
+server/app/venv/
 # Log files
 npm-debug.log*
 yarn-debug.log*
