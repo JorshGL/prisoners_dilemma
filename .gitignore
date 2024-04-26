@@ -2,6 +2,9 @@
 node_modules
 /dist
 quantum-env
+/dilemmavenv
+/server/app/env
+/server/app/venv
 
 # local env files
 .env.local

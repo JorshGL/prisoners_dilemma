@@ -16,29 +16,28 @@
         />
         %
       </div>
-      <!-- Dimensiones Graph -->
-      <div class = "md:h-40 md:w-40">
-        <Graph :entanglementParameter="wernerParameter" />
-      </div>
-        <input class=""
+      <div><Graph :entanglementParameter="wernerParameter" /></div>
+      <input
         v-model="wernerParameter"
         type="range"
         min="0"
         max="100"
         id="entanglementSlider"
-        />
-
+      />
     </div>
-    <div class="m-5 row-start-2 h-full text-center flex flex-col justify-center">
+    <div
+      class="m-5 row-start-2 h-full text-center flex flex-col justify-center"
+    >
       <!-- Selecciona tu estrategia -->
-      <span class="text-sm font-semibold md:col-span-2 md:text-base  ">{{
+      <span class="text-sm font-semibold md:col-span-2 md:text-base">{{
         lang.buttonsTitle
       }}</span>
-      
-    
-      <div class="gap-4 justify-center grid grid-cols-2 items-center md:gap-3 ">
+
+      <div class="gap-4 justify-center grid grid-cols-2 items-center md:gap-3">
         <!-- Juadator A y B -->
-        <div class="pt-3 col-span-2 flex items-center justify-around self-start ">
+        <div
+          class="pt-3 col-span-2 flex items-center justify-around self-start"
+        >
           <span class="text-xs">{{ lang.playerATitle }}</span>
           <span class="text-xs">{{ lang.playerBTitle }}</span>
         </div>
@@ -114,7 +113,7 @@
 
     <!--  -->
     <div
-      class="font-semibold col-start-1 col-span-2 text-center m-2 gap-0 items-center justify-center md:gap-2 md:flex md:flex-col md:span-2 "
+      class="font-semibold col-start-1 col-span-2 text-center m-2 gap-0 items-center justify-center md:gap-2 md:flex md:flex-col md:span-2"
     >
       {{ lang.rounds }}
       <input
@@ -127,7 +126,7 @@
     <!-- Run Button -->
     <button
       v-on:click="run"
-      class="col-start-1 col-span-2  flex items-center justify-center font-bold text-xl text-zinc-800 bg-[#6EDCD9] px-10 py-3 m-2 rounded-md"
+      class="col-start-1 col-span-2 flex items-center justify-center font-bold text-xl text-zinc-800 bg-[#6EDCD9] px-10 py-3 m-2 rounded-md"
     >
       {{ lang.run }}
       <svg width="32" height="32" viewBox="0 0 24 24">

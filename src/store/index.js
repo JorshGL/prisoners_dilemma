@@ -52,6 +52,7 @@ export default createStore({
           playerBTitle: "Player B",
         },
         acknowledgements: {
+          universities: "Associated Universities:",
           titleOne: "What is it?",
           titleTwo: "What is it for?",
           thanksTo: "Special thanks to",
@@ -59,18 +60,30 @@ export default createStore({
         body: {
           p1: `
           
-          <div class='flex flex-col justify-center text-5xl my-5 '>
+          <div class='flex flex-col justify-center text-3xl lg:text-5xl my-28 xl:my-40 '>
 
-          <div class='indent-12 flex justify-center text-center font-semibold'><p>Quantum Computers Are Powerful,<br/> but...</p></div>
-            <div class='flex justify-center text-center'>
-            <strong class="text-8xl italic bg-clip-text font-bold text-transparent bg-gradient-to-r py-2 from-sky-500 to-sky-200">
-            How much?
-            </strong>
+            <div class="flex justify-between text-9xl italic">
+              <div class="animate-pulse">
+                >           
+              </div>
+              <div class="flex flex-col justify-center">
+                <div class='flex justify-center text-center font-semibold text-5xl justify-self-center '>
+                  <p>Quantum Computers are powerful but...</p>
+                </div>
+                <div class='flex justify-center'>
+                <p class="lg:text-8xl text-5xl mt-2 italic text-sky-400 font-semibold animate-pulse delay-400 ">
+                  How much?
+                </p>
+                </div>  
+              </div>
+              <div class="animate-pulse">
+                <
+              </div>
             </div>
           </div>
           
           <p>
-          Over 40 years ago, Paul Benioff introduced <span class='italic'>'Quantum Computing'</span>. 43 years later, it is a new way of processing information
+          Over 40 years ago, Paul Benioff introduced <span class='italic font-semibold'>'Quantum Computing'</span>. 43 years later, it is a new way of processing information
            that promises to <strong class='text-xl italic'>revolutionize the world of machines</strong>. 
           </p><br/>
           
@@ -111,7 +124,7 @@ export default createStore({
           <span class="text-[#00f7ff] italic"> quantum theory</span>, the
           probabilities of obtaining each of these sentences
           <span class="text-3xl font-bold italic">change</span>.`,
-          prisioner: "Prisoners",
+          prisoner: "Prisoners",
           yearOne: "1 year",
           yearThree: "3 years",
           yearFive: "5 years",
@@ -158,6 +171,7 @@ export default createStore({
           playerBTitle: "Jugador B",
         },
         acknowledgements: {
+          universities: "Universidades Asociadas:",
           titleOne: "¿Qué es?",
           titleTwo: "¿Para qué sirve?",
           thanksTo: "Agradecimientos a",
@@ -165,18 +179,32 @@ export default createStore({
         body: {
           p1: `
           
-          <div class='flex flex-col justify-center text-5xl my-5 '>
+          <div class='flex flex-col justify-center text-3xl lg:text-5xl my-28 xl:my-40 '>
 
-          <div class='flex justify-center text-center font-semibold'><p>Las computadoras cuánticas son poderosas, pero...</p></div>
-          <div class='flex justify-center'>
-            <strong class="text-8xl italic mt-2 bg-clip-text font-bold text-transparent bg-gradient-to-r py-2 from-sky-500 to-sky-200">
-            ¿Qué tanto?
-            </strong>
+          <div class="flex justify-between text-9xl italic">
+            <div class="animate-pulse">
+              >           
             </div>
+            <div class="flex flex-col justify-center">
+              <div class='flex justify-center text-center font-semibold text-5xl justify-self-center '>
+                <p>Las computadoras cuánticas son poderosas, pero...</p>
+              </div>
+               <div class='flex justify-center'>
+            <p class="lg:text-8xl text-5xl mt-2 italic text-sky-400 font-semibold animate-pulse delay-400 ">
+              ¿Qué tanto?
+            </p>
+          </div>  
+            </div>
+            <div class="animate-pulse">
+              <
+            </div>
+          </div>
+
+          
           </div>
           
           <p>
-          Hace más de 40 años Paul Benioff introdujo la <span class='italic'>'Computación Cuántica'</span>. 43 años más tarde, es una nueva forma de procesamiento de la información
+          Hace más de 40 años Paul Benioff introdujo la <span class='italic font-semibold'>'Computación Cuántica'</span>. 43 años más tarde, es una nueva forma de procesamiento de la información
            que promete <strong class='text-xl italic'>revolucionar el mundo de las máquinas</strong>. 
           </p><br/>
           
@@ -224,8 +252,8 @@ export default createStore({
           p8: `Sin embargo, gracias a la
               <span class="text-[#00f7ff] italic"> teoría cuántica</span> las
               probabilidades de obtener cada una de estas condenas
-              <span class="text-3xl font-bold italic">cambia</span>.`,
-          prisioner: "Prisioneros",
+              <span class="text-3xl font-bold italic">cambian</span>.`,
+          prisoner: "Prisioneros",
           yearOne: "1 año",
           yearThree: "3 años",
           yearFive: "5 años",

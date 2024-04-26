@@ -1,37 +1,36 @@
 <template>
   <div
     id="bg"
-    class="flex flex-col col bg-zinc-900 max-w-full rounded-xl justify-center items-center md:space-y-12 overflow-hidden relative "
+    class="flex flex-col col bg-zinc-900 max-w-full rounded-xl justify-center items-center md:space-y-12 overflow-hidden relative"
   >
     <!-- Tu estrategioa -->
     <span class="sm:text-xs font-bold md:text-3xl">{{ lang.title }}</span>
 
     <!-- Contenedor personajes -->
     <div
-      class="z-10 grid md:auto-cols-min justify-center items-center gap-y-5 gap-x-24 text-center px-3  md:p-4"
+      class="z-10 grid md:auto-cols-min justify-center items-center gap-y-5 gap-x-24 text-center px-3 md:p-4"
     >
-      <div class="flex items-center justify-center text-xs md:text-base">
-        <strong> {{ lang.playerATitle }}</strong>
+      <div class="flex items-center justify-center">
+        <strong>{{ lang.playerATitle }}</strong>
       </div>
       <div
-        class="flex flex-col row-start-2 bg-zinc-900 rounded-xl items-center p-2 justify-center overflow-hidden md:h-60 md:w-40 lg:w-48"
-      >
-      <!-- Img Personaje A -->
-        <img
-          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto"
-          :src="data.playerA.sprite"
-        />
-      </div>
-
-      <div class="flex items-center justify-center text-xs md:text-base">
-        <strong>{{ lang.playerBTitle }}</strong>
-      </div>
-      <div
-        class="flex flex-col row-start-2 bg-zinc-900 rounded-xl items-center p-2 justify-center overflow-hidden md:h-60 md:w-40 lg:w-48"
+        class="flex flex-col row-start-2 bg-transparent p-8 h-auto w-48 rounded-xl items-center justify-center overflow-hidden"
       >
         <!-- Img Personaje A -->
         <img
-          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto"
+          class="hover:scale-125 transition duration-400 ease-in-out animate-pulse"
+          :src="data.playerA.sprite"
+        />
+      </div>
+      <div class="flex items-center justify-center">
+        <strong>{{ lang.playerBTitle }}</strong>
+      </div>
+      <div
+        class="flex flex-col row-start-2 bg-transparent h-auto w-48 rounded-xl items-center p-8 justify-center overflow-hidden"
+      >
+        <!-- Img Personaje A -->
+        <img
+          class="hover:scale-125 transition duration-400 ease-in-out animate-pulse"
           :src="data.playerB.sprite"
         />
       </div>
