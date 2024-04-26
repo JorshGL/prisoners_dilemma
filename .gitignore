@@ -2,6 +2,9 @@
 node_modules
 /dist
 quantum-env
+/server/app/venv/
+/server/app/env/
+
 
 # local env files
 .env.local

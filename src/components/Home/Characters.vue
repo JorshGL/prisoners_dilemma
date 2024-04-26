@@ -11,7 +11,7 @@
         <strong>{{ lang.playerATitle }}</strong>
       </div>
       <div
-        class="flex flex-col row-start-2 bg-zinc-900 p-8 h-auto w-48 rounded-xl items-center justify-center overflow-hidden"
+        class="flex flex-col row-start-2 bg-transparent p-8 h-auto w-48 rounded-xl items-center justify-center overflow-hidden"
       >
         <img
           class="hover:scale-125 transition duration-400 ease-in-out animate-pulse"
@@ -22,7 +22,7 @@
         <strong>{{ lang.playerBTitle }}</strong>
       </div>
       <div
-        class="flex flex-col row-start-2 bg-zinc-900 h-auto w-48 rounded-xl items-center p-8 justify-center overflow-hidden"
+        class="flex flex-col row-start-2 bg-transparent h-auto w-48 rounded-xl items-center p-8 justify-center overflow-hidden"
       >
         <img
           class="hover:scale-125 transition duration-400 ease-in-out animate-pulse"
