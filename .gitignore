@@ -2,14 +2,14 @@
 node_modules
 /dist
 quantum-env
+/dilemmavenv
+/server/app/env
+/server/app/venv
 
 # local env files
 .env.local
 .env.*.local
 
-/dilemmaenv
-server/app/env/
-server/app/venv/
 # Log files
 npm-debug.log*
 yarn-debug.log*
