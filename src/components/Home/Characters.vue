@@ -14,11 +14,11 @@
         <strong> {{ lang.playerATitle }}</strong>
       </div>
       <div
-        class="flex flex-col row-start-2 bg-zinc-900 rounded-xl items-center p-2 justify-center overflow-hidden md:h-60 md:w-40 lg:w-48"
+        class="flex flex-col row-start-2 bg-transparent rounded-xl items-center p-2 justify-center overflow-hidden md:h-60 md:w-40 lg:w-48 animate-bounce duration-1000"
       >
       <!-- Img Personaje A -->
         <img
-          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto"
+          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto h-3/4"
           :src="data.playerA.sprite"
         />
       </div>
@@ -27,11 +27,11 @@
         <strong>{{ lang.playerBTitle }}</strong>
       </div>
       <div
-        class="flex flex-col row-start-2 bg-zinc-900 rounded-xl items-center p-2 justify-center overflow-hidden md:h-60 md:w-40 lg:w-48"
+        class="flex flex-col row-start-2 bg-transparent rounded-xl items-center p-2 justify-center overflow-hidden md:h-60 md:w-40 lg:w-48 animate-bounce"
       >
         <!-- Img Personaje A -->
         <img
-          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto"
+          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto h-3/4 "
           :src="data.playerB.sprite"
         />
       </div>
