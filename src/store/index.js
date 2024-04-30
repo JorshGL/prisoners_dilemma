@@ -125,7 +125,7 @@ export default createStore({
     toggleModal: function (state) {
       if (state.modalwindow.secondTime <= 2) {
         state.modalwindow.modalActive = !state.modalwindow.modalActive;
-        state.modalwindow.secondTime += 1
+        //state.modalwindow.secondTime += 1
       } 
       
     },

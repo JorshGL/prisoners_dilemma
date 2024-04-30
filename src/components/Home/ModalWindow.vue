@@ -8,7 +8,7 @@
                         <CarouselSet                        
                             :pagination= "true"
                             :startAutoPlay="false"
-                            :timeout="3000"       
+                            :timeout="3000"                 
                             class="carousel" v-slot="{ currentSlide }"> 
 
                             <SlidesSet v-for="(slide, index) in carouselSlides" :key="index">                                    
@@ -107,26 +107,16 @@
             
             position: relative;
             max-width: 640px;
-            max-height: 80%;
-            width: auto;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            height: auto;
             border-radius: 30px;
         
         .modal-content {
-            display: flex;
-            flex-direction: column; 
-            object-fit: cover;
-            height: auto;
-            width: auto;
+
             border-radius: 30px;
             
             
     
             .carousel{
-                position: relative;
-                max-height: 100vh;
-                height: 80vh;
                 display: flex;
                 border-radius: 30px;
                 
@@ -134,12 +124,7 @@
                 .slide-info{
                     
                     display: flex;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    max-height: 100%;
                     height: 80vh;
-                    max-width: 100%;
                     border-radius: 30px;             
                     
                 }
