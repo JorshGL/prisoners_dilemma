@@ -179,7 +179,7 @@ export default createStore({
         body: {
           p1: `
           
-          <div class='flex flex-col justify-center text-3xl lg:text-5xl my-28 xl:my-40 '>
+          <div class='flex flex-col justify-center text-3xl lg:text-5xl my-20 xl:my-28 '>
 
           <div class="flex justify-between text-9xl italic">
             <div class="animate-pulse">
