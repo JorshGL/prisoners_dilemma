@@ -14,23 +14,24 @@
         <strong>{{ lang.playerATitle }}</strong>
       </div>
       <div
-        class="flex flex-col row-start-2 bg-transparent p-8 h-auto w-48 rounded-xl items-center justify-center overflow-hidden"
+        class="flex flex-col row-start-2 bg-transparent rounded-xl items-center p-2 justify-center overflow-hidden md:h-60 md:w-40 lg:w-48 animate-bounce duration-1000"
       >
-        <!-- Img Personaje A -->
+      <!-- Img Personaje A -->
         <img
-          class="hover:scale-125 transition duration-400 ease-in-out animate-pulse"
+          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto h-3/4"
           :src="data.playerA.sprite"
         />
       </div>
-      <div class="flex items-center justify-center">
+
+      <div class="flex items-center justify-center text-xs md:text-base">
         <strong>{{ lang.playerBTitle }}</strong>
       </div>
       <div
-        class="flex flex-col row-start-2 bg-transparent h-auto w-48 rounded-xl items-center p-8 justify-center overflow-hidden"
+        class="flex flex-col row-start-2 bg-transparent rounded-xl items-center p-2 justify-center overflow-hidden md:h-60 md:w-40 lg:w-48 animate-bounce"
       >
         <!-- Img Personaje A -->
         <img
-          class="hover:scale-125 transition duration-400 ease-in-out animate-pulse"
+          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto h-3/4 "
           :src="data.playerB.sprite"
         />
       </div>
