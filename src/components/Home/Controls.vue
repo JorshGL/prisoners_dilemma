@@ -16,8 +16,12 @@
         />
         %
       </div>
-      <div><Graph :entanglementParameter="wernerParameter" /></div>
+      <!-- Dimensiones Graph -->
+      <div class="md:h-40 md:w-40">
+        <Graph :entanglementParameter="wernerParameter" />
+      </div>
       <input
+        class=""
         v-model="wernerParameter"
         type="range"
         min="0"
