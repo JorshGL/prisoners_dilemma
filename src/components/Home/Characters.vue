@@ -4,7 +4,7 @@
     class="flex flex-col col bg-zinc-900 max-w-full rounded-xl justify-center items-center md:space-y-12 overflow-hidden relative"
   >
     <!-- Tu estrategioa -->
-    <span class="sm:text-xs font-bold md:text-3xl">{{ lang.title }}</span>
+    <span class="sm:text-xs font-bold md:text-3xl my-5">{{ lang.title }}</span>
 
     <!-- Contenedor personajes -->
     <div
@@ -16,7 +16,7 @@
       <div
         class="flex flex-col row-start-2 bg-transparent rounded-xl items-center p-2 justify-center overflow-hidden md:h-60 md:w-40 lg:w-48 animate-bounce duration-1000"
       >
-      <!-- Img Personaje A -->
+        <!-- Img Personaje A -->
         <img
           class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto h-3/4"
           :src="data.playerA.sprite"
@@ -31,7 +31,7 @@
       >
         <!-- Img Personaje A -->
         <img
-          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto h-3/4 "
+          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto h-3/4"
           :src="data.playerB.sprite"
         />
       </div>

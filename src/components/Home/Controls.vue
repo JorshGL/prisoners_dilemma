@@ -4,7 +4,7 @@
     <div
       class="row-start-1 md:flex md:flex-col space-y-2 items-center justify-center text-center"
     >
-      <div class="font-semibold w-full md:text-base text-sm">
+      <div class="font-semibold w-full md:text-xl text-sm">
         {{ lang.wernerParameter }}:
         <!-- iput Porcentaje -->
         <input
@@ -33,23 +33,23 @@
       class="m-5 row-start-2 h-full text-center flex flex-col justify-center"
     >
       <!-- Selecciona tu estrategia -->
-      <span class="text-sm font-semibold md:col-span-2 md:text-base">{{
+      <span class="text-sm font-semibold md:col-span-2 md:text-xl">{{
         lang.buttonsTitle
       }}</span>
 
       <div class="gap-4 justify-center grid grid-cols-2 items-center md:gap-3">
-        <!-- Juadator A y B -->
+        <!-- Jugador A y B -->
         <div
           class="pt-3 col-span-2 flex items-center justify-around self-start"
         >
-          <span class="text-xs">{{ lang.playerATitle }}</span>
-          <span class="text-xs">{{ lang.playerBTitle }}</span>
+          <span class="text-xs md:text-sm">{{ lang.playerATitle }}</span>
+          <span class="text-xs md:text-sm">{{ lang.playerBTitle }}</span>
         </div>
         <!-- Botones cooperar -->
         <button
           v-on:click="setStrategy('A', '0')"
           :class="[
-            'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7 md:w-24 lg:w-32',
+            'text-xs md:text-sm p-1 bg-zinc-700 rounded-md h-10 md:h-7 md:w-24 lg:w-32',
             strategy.playerA === '0'
               ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
               : '',
@@ -60,7 +60,7 @@
         <button
           v-on:click="setStrategy('B', '0')"
           :class="[
-            'text-xs p-1 bg-zinc-700 rounded-md h-10 sm:h-15 md:h-7',
+            'text-xs md:text-sm p-1 bg-zinc-700 rounded-md h-10 sm:h-15 md:h-7',
             strategy.playerB === '0'
               ? 'bg-slate-800 shadow-md shadow-[#E15FED] transition duration-300 ease-in-out'
               : '',
@@ -71,7 +71,7 @@
         <button
           v-on:click="setStrategy('A', '1')"
           :class="[
-            'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7',
+            'text-xs md:text-sm p-1 bg-zinc-700 rounded-md h-10 md:h-7',
             strategy.playerA === '1'
               ? 'bg-slate-800 shadow-md shadow-[#ff7674] transition duration-300 ease-in-out'
               : '',
@@ -82,7 +82,7 @@
         <button
           v-on:click="setStrategy('B', '1')"
           :class="[
-            'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7',
+            'text-xs  md:text-sm p-1 bg-zinc-700 rounded-md h-10 md:h-7',
             strategy.playerB === '1'
               ? 'bg-slate-800 shadow-md shadow-[#ff7674] transition duration-300 ease-in-out'
               : '',
@@ -93,7 +93,7 @@
         <button
           v-on:click="setStrategy('A', '-1')"
           :class="[
-            'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7',
+            'text-xs md:text-sm p-1 bg-zinc-700 rounded-md h-10 md:h-7',
             strategy.playerA === '-1'
               ? 'bg-slate-800 shadow-md shadow-[#6EDCD9] transition duration-300 ease-in-out'
               : '',
@@ -104,7 +104,7 @@
         <button
           v-on:click="setStrategy('B', '-1')"
           :class="[
-            'text-xs p-1 bg-zinc-700 rounded-md h-10 md:h-7',
+            'text-xs md:text-sm p-1 bg-zinc-700 rounded-md h-10 md:h-7',
             strategy.playerB === '-1'
               ? 'bg-slate-800 shadow-md shadow-[#6EDCD9] transition duration-300 ease-in-out'
               : '',

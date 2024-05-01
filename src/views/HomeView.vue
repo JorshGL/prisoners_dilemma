@@ -4,7 +4,7 @@
     <NavBar />
     <div class="grid grid-cols-1 w-full p-5 md:p-2 md:grid-cols-3">
       <div
-        class="row-start-2 h-min md:col-span-1 md:row-span-3 md:col-start-1 md:row-start-1:"
+        class="row-start-2 h-min md:col-span-1 md:row-span-3 md:col-start-1 md:row-start-1"
       >
         <Controls />
       </div>
