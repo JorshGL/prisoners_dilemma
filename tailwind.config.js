@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         Lobster: ["Lobster"],
       },
+      width: {
+        900: "900px",
+      },
     },
   },
   plugins: [],

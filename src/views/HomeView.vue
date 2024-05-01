@@ -13,11 +13,13 @@
       >
         <Characters />
       </div>
-      <div class="row-start-3 col-span-2 h-min pt-6 md:pt-0 md:col-start-2">
+      <div
+        class="row-start-3 col-span-2 h-min pt-6 md:pt-0 md:flex md:flex-1 md:justify-center md:col-start-2"
+      >
         <Results />
       </div>
     </div>
-    <div class="flex flex-col mt-10">
+    <div class="flex flex-col mt-3">
       <Footer />
     </div>
   </body>
