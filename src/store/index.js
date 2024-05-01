@@ -59,51 +59,8 @@ export default createStore({
         },
         body: {
           p1: `
-          
-          <div class='flex flex-col justify-center text-3xl lg:text-5xl my-28 xl:my-40 '>
-
-            <div class="flex justify-between text-9xl italic">
-              <div class="animate-pulse">
-                >           
-              </div>
-              <div class="flex flex-col justify-center">
-                <div class='flex justify-center text-center font-semibold text-5xl justify-self-center '>
-                  <p>Quantum Computers are powerful but...</p>
-                </div>
-                <div class='flex justify-center'>
-                <p class="lg:text-8xl text-5xl mt-2 italic text-sky-400 font-semibold animate-pulse delay-400 ">
-                  How much?
-                </p>
-                </div>  
-              </div>
-              <div class="animate-pulse">
-                <
-              </div>
-            </div>
-          </div>
-          
-          <p>
-          Over 40 years ago, Paul Benioff introduced <span class='italic font-semibold'>'Quantum Computing'</span>. 43 years later, it is a new way of processing information
-           that promises to <strong class='text-xl italic'>revolutionize the world of machines</strong>. 
-          </p><br/>
-          
-
-          <p>
-          They are capable of running algorithms that would take DECADES on conventional systems in <span class='font-semibold'>a matter of seconds</span>,
-          improving the banking security worldwide and optimizing strategies in video games achieving an immersive experience 
-          thanks to the graphics rendering and even more with the new global trend:
-            <span class='italic text-sky-400'><strong> Artificial Intelligence </strong></span>.
-        </p>
-        <br />
-        <p>
-          A problem that can explain more clearly the importance of quantum computing is the
-          <span
-            class="bg-gradient-to-r from-rose-400 to-purple-400 font-bold bg-clip-text text-transparent"
-            >prisoner's dilemma</span
-          >, which is a useful model for analyzing a variety of strategic decision-making situations in which
-          <strong>cooperation</strong> and <strong>betrayal</strong> are key factors.
-        </p> <br/>
-  `,
+            What is it?
+          `,
           p2: `The prisoner's dilemma is a problem in which there are two prisoners who have committed a crime together.`,
           p3: `Suppose the prisoners are separated and each is told that their sentence will be reduced to 3 years if and only if both
           <span class="text-rose-400 font-semibold">betray</span>
@@ -178,55 +135,8 @@ export default createStore({
         },
         body: {
           p1: `
-          
-          <div class='flex flex-col justify-center text-3xl lg:text-5xl my-28 xl:my-40 '>
-
-          <div class="flex justify-between text-9xl italic">
-            <div class="animate-pulse">
-              >           
-            </div>
-            <div class="flex flex-col justify-center">
-              <div class='flex justify-center text-center font-semibold text-5xl justify-self-center '>
-                <p>Las computadoras cuánticas son poderosas, pero...</p>
-              </div>
-               <div class='flex justify-center'>
-            <p class="lg:text-8xl text-5xl mt-2 italic text-sky-400 font-semibold animate-pulse delay-400 ">
-              ¿Qué tanto?
-            </p>
-          </div>  
-            </div>
-            <div class="animate-pulse">
-              <
-            </div>
-          </div>
-
-          
-          </div>
-          
-          <p>
-          Hace más de 40 años Paul Benioff introdujo la <span class='italic font-semibold'>'Computación Cuántica'</span>. 43 años más tarde, es una nueva forma de procesamiento de la información
-           que promete <strong class='text-xl italic'>revolucionar el mundo de las máquinas</strong>. 
-          </p><br/>
-          
-
-          <p>
-          Son capaces de ejecutar en <span class='font-semibold'>cuestión de segundos</span> algoritmos que tomarían DECADAS en sistemas convencionales,
-          de mejorar la seguridad bancaria del mund y de optimizar estrategias en videojuegos logrando una experiencia inmersiva 
-          gracias a la renderización de los gráficos y más aún con la nueva tendencia mundial:
-            <span class='italic text-sky-400'><strong> La Inteligencia Artificial </strong></span>.
-        </p>
-        <br />
-        <p>
-          Un problema que puede explicar de una manera más clara la importancia de la computación
-          cuántica es el
-          <span
-            class="bg-gradient-to-r from-rose-400 to-purple-400 font-bold bg-clip-text text-transparent"
-            >dilema del prisionero</span
-          >, el cual es un modelo útil para analizar una variedad de situaciones
-          de toma de decisiones estratégicas en las que la
-          <strong>cooperación</strong> y <strong>la traición</strong> son
-          factores clave.
-        </p> <br/>`,
+          ¿Qué es?
+          `,
           p2: `El dilema del prisionero, es un problema en el que hay dos
               prisioneros que han cometido un crimen juntos.`,
           p3: `Suponga que los prisioneros son separados y se les dice a

@@ -16,46 +16,11 @@
     <div
       class="flex flex-wrap flex-col lg:flex-row sm:mx-1 sm:my-3 text-center text 1xl sm:text-2xl lg:text-[25px] 2xl:text-4xl justify-around"
     >
-      <a
-        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-500 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
-        href="https://github.com/JorshGL/"
-        target="_blank"
-      >
-        Jorge Gallego
-      </a>
-      <a
-        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-400 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
-      >
-        Marcela Herrera
-      </a>
-      <a
-        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
-        href="https://github.com/aliss-55"
-        target="_blank"
-      >
-        Allison Tobar
-      </a>
-      <a
-        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
-        href="https://github.com/SAHV-24"
-        target="_blank"
-      >
-        Sergio Herrera
-      </a>
-      <a
-        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
-        href="https://github.com/paulomeister"
-        target="_blank"
-      >
-        Jean Paul Delgado
-      </a>
-      <a
-        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 sm:mx-0 from-slate-200 to-slate-500 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
-        href="https://github.com/juandavid764"
-        target="_blank"
-      >
-        Juan David Trujillo
-      </a>
+      <div
+        v-for="index in 7"
+        :key="index"
+        v-html="list[randomIndexes[index]]"
+      ></div>
     </div>
   </div>
 </template>
@@ -67,17 +32,72 @@ import { useStore } from "vuex";
 export default {
   setup() {
     const store = useStore();
-    const data = computed(() => {
-      return {
-        img: {
-          source: require(`@/assets/logos/Quantum box.png`),
-        },
-      };
-    });
     const lang = computed(() => store.getters.getLang.acknowledgements);
+    const list = [
+      `<a
+        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-500 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+        href="https://github.com/JorshGL/"
+        target="_blank"
+      >
+        Jorge Gallego
+      </a>`,
+      ` <a
+        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-400 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+      >
+        Marcela Herrera
+      </a>`,
+      `<a
+        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+        href="https://github.com/aliss-55"
+        target="_blank"
+      >
+        Allison Tobar
+      </a>`,
+      ` <a
+        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+        href="https://github.com/SAHV-24"
+        target="_blank"
+      >
+        Sergio Herrera
+      </a>`,
+      `<a
+        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+        href="https://github.com/paulomeister"
+        target="_blank"
+      >
+        Jean Paul Delgado
+      </a>`,
+      `<a
+        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 sm:mx-0 from-slate-200 to-slate-500 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+        href="https://github.com/juandavid764"
+        target="_blank"
+      >
+        Juan David Trujillo
+      </a>`,
+      `<a
+        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 sm:mx-0 from-slate-200 to-slate-500 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+        href="https://github.com/juandavid764"
+        target="_blank"
+      >
+        El profesor
+      </a>`,
+    ];
+
+    const randomIndexes = computed(() => {
+      const indexes = [];
+      while (indexes.length < 7) {
+        const randomIndex = Math.floor(Math.random() * list.length);
+        if (!indexes.includes(randomIndex)) {
+          indexes.push(randomIndex);
+        }
+      }
+      return indexes;
+    });
+
     return {
-      data,
       lang,
+      list,
+      randomIndexes,
     };
   },
 };

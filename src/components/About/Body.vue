@@ -3,33 +3,15 @@
     <div class="grid-rows-1 place-items-center text-center px-4 text-white">
       <h1 class="text-4xl mb-3.5" id="title"></h1>
       <div class="lg:text-xl text-justify sm:px-36">
-        <div v-html="lang.body.p1"></div>
+        <!-- <div v-html="lang.body.p1"></div> -->
         <h1
-          class="mt-10 text-2xl text-center lg:text-5xl font-bold italic bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent"
+          class="mt-2 text-2xl lg:text-5xl font-bold italic bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent"
         >
-          {{ lang.navbar.title }}
+          {{ lang.body.p1 }}
         </h1>
-        <div class="flex-auto flex justify-center mb-5">
-          <!-- <div class="w-36 h-36 sm:h-48 sm:w-48 mx-5 flex flex-col text-center">
-            <img
-              :src="data.img.Prisioner1"
-              alt="Quantum box logo"
-              class="hover:scale-105 hover:duration-200 duration-200"
-            />
-            <p>Prisionero 1</p>
-          </div>
-          <div class="w-36 h-36 sm:h-48 sm:w-48 mx-5 flex flex-col text-center">
-            <img
-              :src="data.img.Prisioner1"
-              alt="Quantum box logo"
-              class="hover:scale-105 hover:duration-200 duration-200"
-            />
-            <p>Prisionero 2</p>
-          </div> -->
-        </div>
-        <div CLASS="mt-6 ">
+        <div CLASS="mt-6">
           <div>
-            <p class="px-16 xl:px-60">{{ lang.body.p2 }}</p>
+            <p class="px-16">{{ lang.body.p2 }}</p>
             <div>
               <div
                 class="text-justify items-center px-16 xl:px-50 2xl:px-60 my-7"
