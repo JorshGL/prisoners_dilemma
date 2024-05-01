@@ -1,6 +1,6 @@
 <template>
   <!-- Contenedor Raiz -->
-  <body class="bg-zinc-900 text-white md:h-screen">
+  <body class="bg-zinc-900 text-white md:h-min 2xl:h-screen">
     <NavBar />
     <div class="grid grid-cols-1 w-full p-5 md:p-2 md:grid-cols-3">
       <div
