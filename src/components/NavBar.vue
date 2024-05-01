@@ -1,13 +1,16 @@
 <template>
-  <nav class="flex flex-col items-center h-1/4 py-5 md:mb-6">
+  <nav class="flex flex-col items-center h-1/5 py-5 md:py-7">
     <div class="flex justify-center py-0">
-      <h1 id="title" class="font-bold text-sm justify-center px-3 py-2 sm:text-3xl md:text-4xl lg:text-5xl">
+      <h1
+        id="title"
+        class="font-bold text-sm justify-center px-3 py-2 sm:text-3xl md:text-4xl lg:text-5xl"
+      >
         {{ lang.title }}
       </h1>
 
       <button
         v-on:click="cambiarIdioma"
-        class="text-xs ml-3 py-2 justify-end font-semibold  bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-blue-500 sm:text-3xl md:text-2xl"
+        class="text-xs ml-3 py-2 justify-end font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-blue-500 sm:text-3xl md:text-2xl"
       >
         {{ lang.change }}
       </button>
