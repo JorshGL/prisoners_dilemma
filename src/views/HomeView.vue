@@ -17,7 +17,9 @@
         <Results />
       </div>
     </div>
-    <div></div>
+    <div class="flex flex-col mt-10">
+      <Footer />
+    </div>
   </body>
 </template>
 
@@ -26,12 +28,14 @@ import NavBar from "@/components/NavBar.vue";
 import Controls from "@/components/Home/Controls.vue";
 import Characters from "@/components/Home/Characters.vue";
 import Results from "@/components/Home/Results.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   components: {
     NavBar,
     Controls,
     Characters,
     Results,
+    Footer,
   },
 };
 </script>
