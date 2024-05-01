@@ -1,9 +1,9 @@
 <template>
   <table
-    class="border-collapse rounded-md border-slate-300 text-center border-[2px]"
+    class="border-collapse border-slate-300 text-center border-[3px] rounded-lg"
   >
     <thead>
-      <th class="border text-lg lg:text-2xl border-slate-300 px-3">
+      <th class="border text-lg lg:text-2xl border-slate-300 px-3 rounded-lg">
         {{ lang.prisoner }}
       </th>
       <th class="border-[2px] font-semibold pt-5">
@@ -16,7 +16,7 @@
           <p CLASS="text-rose-400 font-semibold ">{{ lang.optionOne }}</p>
         </div>
       </th>
-      <th class="border-[2px] font-semibold pt-5">
+      <th class="border-[2px] font-semibold pt-5 rounded-lg">
         <div class="flex flex-col justify-center items-center border-none">
           <img
             :src="data.img.Prisioner1"
@@ -45,7 +45,7 @@
             alt="Quantum box logo"
             class="flex-auto inset-0 w-14 lg:w-32 mx-5"
           />
-          <p CLASS="text-rose-400 font-semibold">{{ lang.optionThree }}</p>
+          <p CLASS="text-rose-400 font-semibold">{{ lang.optionOne }}</p>
         </div>
       </td>
 

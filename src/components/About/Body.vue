@@ -5,12 +5,11 @@
       <div class="lg:text-xl text-justify sm:px-36">
         <!-- <div v-html="lang.body.p1"></div> -->
         <h1
-          class="mt-2 text-2xl text-center lg:text-5xl font-bold italic bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent"
+          class="mt-2 text-2xl lg:text-5xl font-bold italic bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent"
         >
-          {{ lang.navbar.title }}
+          {{ lang.body.p1 }}
         </h1>
-        <div class="flex-auto flex justify-center mb-5"></div>
-        <div CLASS="mt-6 ">
+        <div CLASS="mt-6">
           <div>
             <p class="px-16">{{ lang.body.p2 }}</p>
             <div>
