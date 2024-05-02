@@ -14,7 +14,7 @@
       {{ lang.thanksTo }}
     </div>
     <div
-      class="flex flex-wrap flex-col lg:flex-row sm:mx-1 sm:my-3 text-center text 1xl sm:text-2xl lg:text-[25px] 2xl:text-4xl justify-around"
+      class="flex flex-wrap flex-col lg:flex-col xl:flex-row sm:mx-1 sm:my-3 text-center text-xl sm:text-2xl lg:text-[19.5px] 2xl:text-3xl justify-around"
     >
       <div
         v-for="index in 7"
@@ -81,11 +81,11 @@ export default {
       </a>`,
       `<a
         class="flex-auto text font-bold bg-gradient-to-r lg:py-3 sm:mx-0 from-slate-200 to-slate-500 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
-        href="https://github.com/juandavid764"
+        href="https://ciencias.univalle.edu.co/departamento-de-fisica/personal/docentes/omar-calderon-losada"
         target="_blank"
         id="thanks"
       >
-        El profesor
+        Omar Calderón
       </a>`,
     ];
 
