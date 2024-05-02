@@ -38,6 +38,7 @@ export default {
         class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-500 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
         href="https://github.com/JorshGL/"
         target="_blank"
+        id="thanks"
       >
         Jorge Gallego
       </a>`,
@@ -50,6 +51,7 @@ export default {
         class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
         href="https://github.com/aliss-55"
         target="_blank"
+        id="thanks"
       >
         Allison Tobar
       </a>`,
@@ -57,6 +59,7 @@ export default {
         class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
         href="https://github.com/SAHV-24"
         target="_blank"
+        id="thanks"
       >
         Sergio Herrera
       </a>`,
@@ -64,6 +67,7 @@ export default {
         class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
         href="https://github.com/paulomeister"
         target="_blank"
+        id="thanks"
       >
         Jean Paul Delgado
       </a>`,
@@ -71,6 +75,7 @@ export default {
         class="flex-auto text font-bold bg-gradient-to-r lg:py-3 sm:mx-0 from-slate-200 to-slate-500 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
         href="https://github.com/juandavid764"
         target="_blank"
+        id="thanks"
       >
         Juan David Trujillo
       </a>`,
@@ -78,6 +83,7 @@ export default {
         class="flex-auto text font-bold bg-gradient-to-r lg:py-3 sm:mx-0 from-slate-200 to-slate-500 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
         href="https://github.com/juandavid764"
         target="_blank"
+        id="thanks"
       >
         El profesor
       </a>`,
@@ -103,7 +109,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+/* Tus estilos CSS aquí */
 #title {
   color: #eeeeee;
   text-shadow: 2px 2px 2px #e15fed, -2px -2px 2px #246260;
@@ -111,5 +118,11 @@ export default {
 
 .currentRoute {
   text-shadow: 1.5px 1.5px 1.5px #e15fed;
+}
+
+#thanks:hover {
+  font-size: 110%; /* Aumento del tamaño de la fuente */
+  padding: 5px; /* Aumento de la altura del contenedor */
+  transition: font-size 300ms ease-in-out, padding 300ms ease-in-out; /* Transición suave durante 300ms */
 }
 </style>

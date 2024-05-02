@@ -81,7 +81,7 @@ export default createStore({
           <span class="text-[#00f7ff] italic"> quantum theory</span>, the
           probabilities of obtaining each of these sentences
           <span class="text-3xl font-bold italic">change</span>.`,
-          p9: `<p>Note that you arrive at a matrix where the years in prison are
+          p81: `<p>Note that you arrive at a matrix where the years in prison are
                 MINORS than those conventionally seen,
                 <strong>How?</strong> Here is the purpose of this website!
                 Go deeper into this new world and discover how to obtain the

@@ -11,9 +11,9 @@
     </div>
     <div class="relative mt-7">
       <div
-        class="absolute bg-gradient-to-r from-pink-400 to-blue-400 inset-0 rounded-xl blur-md mx-10 sm:mx-16 lg:mx-10"
+        class="absolute bg-gradient-to-r from-pink-400 to-blue-400 inset-0 rounded-xl blur-md mx-10 sm:mx-16 lg:mx-28"
       ></div>
-      <div class="relative bg-zinc-900 rounded-xl mx-10 sm:mx-16 lg:mx-10 pb-6">
+      <div class="relative bg-zinc-900 rounded-xl mx-10 sm:mx-16 lg:mx-28 pb-6">
         <Acknowledgements />
       </div>
     </div>
