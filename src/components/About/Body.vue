@@ -5,16 +5,20 @@
       <div class="lg:text-xl text-justify sm:px-36">
         <!-- <div v-html="lang.body.p1"></div> -->
         <h1
-          class="mt-2 text-2xl lg:text-5xl font-bold italic bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent"
+          class="px-16 xl:px-50 2xl:px-96 mt-2 text-2xl lg:text-5xl font-bold italic bg-gradient-to-r from-rose-400 to-purple-400 bg-clip-text text-transparent"
         >
           {{ lang.body.p1 }}
         </h1>
         <div CLASS="mt-6">
           <div>
-            <p class="px-16">{{ lang.body.p2 }}</p>
+            <p
+              class="text-justify items-center bg-blue px-16 xl:px-50 2xl:px-96 my-7"
+            >
+              {{ lang.body.p2 }}
+            </p>
             <div>
               <div
-                class="text-justify items-center px-16 xl:px-50 2xl:px-60 my-7"
+                class="text-justify items-center bg-blue px-16 xl:px-50 2xl:px-96 my-7"
               >
                 <div class="flex flex-col my-7">
                   <p class="h-auto" v-html="lang.body.p3"></p>
@@ -76,6 +80,11 @@
             ></p>
             <div class="mt-3">
               <div class="mt-5 flex justify-center"><QuantumMatrix /></div>
+            </div>
+            <div
+              class="text-justify items-center bg-blue px-16 xl:px-50 2xl:px-96 my-7"
+            >
+              <span class="" v-html="lang.body.p81"></span>
             </div>
           </div>
         </div>

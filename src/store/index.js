@@ -81,6 +81,11 @@ export default createStore({
           <span class="text-[#00f7ff] italic"> quantum theory</span>, the
           probabilities of obtaining each of these sentences
           <span class="text-3xl font-bold italic">change</span>.`,
+          p9: `<p>Note that you arrive at a matrix where the years in prison are
+                MINORS than those conventionally seen,
+                <strong>How?</strong> Here is the purpose of this website!
+                Go deeper into this new world and discover how to obtain the
+                better results!</p>`,
           prisoner: "Prisoners",
           yearOne: "1 year",
           yearThree: "3 years",
@@ -163,6 +168,11 @@ export default createStore({
               <span class="text-[#00f7ff] italic"> teoría cuántica</span> las
               probabilidades de obtener cada una de estas condenas
               <span class="text-3xl font-bold italic">cambian</span>.`,
+          p81: `<p>Notar que se llega a una matriz dónde los años de carcel son
+                MENORES a los que se veían convencionalmente,
+                <strong>¿Cómo?</strong> He aquí el propósito de esta página web!
+                Adéntrate más en este nuevo mundo y descubre cómo obtener los
+                mejores resultados!</p>`,
           prisoner: "Prisioneros",
           yearOne: "1 año",
           yearThree: "3 años",

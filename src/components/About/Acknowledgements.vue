@@ -19,7 +19,7 @@
       <div
         v-for="index in 7"
         :key="index"
-        v-html="list[randomIndexes[index]]"
+        v-html="list[randomIndexes[index - 1]]"
       ></div>
     </div>
   </div>

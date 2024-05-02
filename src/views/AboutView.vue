@@ -6,7 +6,7 @@
     <div class="">
       <Body />
     </div>
-    <div class="my-16">
+    <div class="mt-5 mb-10">
       <Universities />
     </div>
     <div class="relative mt-7">
