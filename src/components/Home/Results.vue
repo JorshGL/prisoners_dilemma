@@ -1,6 +1,6 @@
 <template>
   <table
-    class="table md:w-[900px] text-center bg-zinc-800 rounded-lg overflow-hidden md:my-6"
+    class="table w-full md:w-[900px] text-center bg-zinc-800 rounded-lg overflow-hidden md:my-6"
   >
     <th class="bg-slate-800" colspan="2">{{ lang.title }}</th>
     <tr>
