@@ -29,7 +29,7 @@ export default createStore({
           playerATitle: "Player A",
           playerBTitle: "Player B",
           buttons: {
-            cooperate: "Keep Quiet",
+            cooperate: "Cooperate",
             deflect: "Betray",
             quantum: "Quantum",
           },
@@ -110,7 +110,7 @@ export default createStore({
           playerATitle: "Jugador A",
           playerBTitle: "Jugador B",
           buttons: {
-            cooperate: "Callar",
+            cooperate: "Cooperar",
             deflect: "Delatar",
             quantum: "Cuántico",
           },

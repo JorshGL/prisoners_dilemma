@@ -54,7 +54,7 @@ def payoff(counts):
     valA = 5-(4*p00 + 2*p11 + 0*p10 + 5*p01)
    # valA = p00 + 3*p11 + 0*p10 + 5*p01
    # valB = p00 + 3*p11 + 5*p10 + 0*p01
-    return valA,valB
+    return round(valA,4),round(valB,4)
 
 
 def run_circuit(tA,tB,gamma,wpar, shots=2048):
