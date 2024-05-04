@@ -6,10 +6,10 @@
     href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
     rel="stylesheet"
   />
-  <div class="flex flex-col justify-center inset-0">
+  <div class="flex flex-wrap flex-col justify-center inset-0">
     <div
       id="title"
-      class="pt-4 col-span-3 font-Lobster text-center text-2xl sm:text-3xl lg:text-6xl font-semibold"
+      class="pt-4 col-span-3 font-Lobster text-center text-xl sm:text-3xl lg:text-6xl font-semibold"
     >
       {{ lang.thanksTo }}
     </div>
