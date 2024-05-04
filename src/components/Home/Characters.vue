@@ -10,11 +10,11 @@
     <div
       class="z-10 grid md:auto-cols-min justify-center items-center gap-y-5 gap-x-24 text-center px-3 md:p-4"
     >
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center text-xs md:text-base">
         <strong>{{ lang.playerATitle }}</strong>
       </div>
       <div
-        class="flex flex-col row-start-2 bg-transparent rounded-xl items-center p-2 justify-center overflow-hidden md:h-60 md:w-40 lg:w-48 animate-bounce duration-1000"
+        class="flex flex-col row-start-2 h-44 w-24 bg-transparent rounded-xl items-center p-2 justify-center overflow-hidden md:h-60 md:w-40 lg:w-48 animate-bounce"
       >
         <!-- Img Personaje A -->
         <img
@@ -27,9 +27,9 @@
         <strong>{{ lang.playerBTitle }}</strong>
       </div>
       <div
-        class="flex flex-col row-start-2 bg-transparent rounded-xl items-center p-2 justify-center overflow-hidden md:h-60 md:w-40 lg:w-48 animate-bounce"
+        class="flex flex-col row-start-2 h-44 w-24 bg-transparent rounded-xl items-center p-2 justify-center overflow-hidden md:h-60 md:w-40 lg:w-48 animate-bounce"
       >
-        <!-- Img Personaje A -->
+        <!-- Img Personaje B -->
         <img
           class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto h-3/4"
           :src="data.playerB.sprite"
