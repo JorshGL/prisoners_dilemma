@@ -9,7 +9,7 @@
   <div class="flex flex-wrap flex-col justify-center inset-0">
     <div
       id="title"
-      class="pt-4 col-span-3 font-Lobster text-center text-xl sm:text-3xl lg:text-6xl font-semibold"
+      class="py-4 col-span-3 font-Lobster text-center text-2xl sm:text-3xl lg:text-6xl font-semibold"
     >
       {{ lang.thanksTo }}
     </div>
@@ -17,7 +17,7 @@
       class="flex flex-wrap flex-col lg:flex-col xl:flex-row sm:mx-1 sm:my-3 text-center text-xl sm:text-2xl lg:text-[19.5px] 2xl:text-3xl justify-around"
     >
       <div
-        v-for="index in 7"
+        v-for="index in 6"
         :key="index"
         v-html="list[randomIndexes[index - 1]]"
       ></div>
@@ -41,20 +41,16 @@ export default {
         id="thanks"
       >
         Jorge Gallego
-      </a>`,
+      </a>
+      <br/> <span class="text-[15px] text-white font-Lobster">Head Developer</span>
+      `,
       ` <a
         class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-400 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
       >
         Marcela Herrera
-      </a>`,
-      `<a
-        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
-        href="https://github.com/aliss-55"
-        target="_blank"
-        id="thanks"
-      >
-        Allison Tobar
-      </a>`,
+      </a>
+      <br/> <span class="text-[15px] text-white font-Lobster">Director</span>
+      `,
       ` <a
         class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
         href="https://github.com/SAHV-24"
@@ -62,7 +58,9 @@ export default {
         id="thanks"
       >
         Sergio Herrera
-      </a>`,
+      </a>
+      <br/> <span class="text-[15px] text-white font-Lobster">Developer</span>
+      `,
       `<a
         class="flex-auto text font-bold bg-gradient-to-r lg:py-3 from-slate-200 to-slate-300 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
         href="https://github.com/paulomeister"
@@ -70,28 +68,34 @@ export default {
         id="thanks"
       >
         Jean Paul Delgado
-      </a>`,
+      </a>
+      <br/> <span class="text-[15px] text-white font-Lobster">Developer</span>
+      `,
       `<a
-        class="flex-auto text font-bold bg-gradient-to-r lg:py-3 sm:mx-0 from-slate-200 to-slate-500 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
+        class="flex-auto text font-bold bg-gradient-to-r lg:pt-3 sm:mx-0 from-slate-200 to-slate-500 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
         href="https://github.com/juandavid764"
         target="_blank"
         id="thanks"
       >
-        Juan David Trujillo
-      </a>`,
+     
+        Juan David Trujillo     
+      </a>
+        <br/> <span class="text-[15px] text-white font-Lobster">Developer</span>`,
       `<a
         class="flex-auto text font-bold bg-gradient-to-r lg:py-3 sm:mx-0 from-slate-200 to-slate-500 bg-clip-text text-transparent duration-300 font-Lobster text-center hover:scale-105 hover:duration-300 hover:from-pink-500 hover:to-orange-400 hover:bg-gradient-to-l"
         href="https://ciencias.univalle.edu.co/departamento-de-fisica/personal/docentes/omar-calderon-losada"
         target="_blank"
         id="thanks"
       >
-        Omar Calderón
-      </a>`,
+        Omar Calderón 
+      </a>
+    <br/> <span class="text-[15px] text-white font-Lobster">Director</span>
+      `,
     ];
 
     const randomIndexes = computed(() => {
       const indexes = [];
-      while (indexes.length < 7) {
+      while (indexes.length < 6) {
         const randomIndex = Math.floor(Math.random() * list.length);
         if (!indexes.includes(randomIndex)) {
           indexes.push(randomIndex);
@@ -110,7 +114,6 @@ export default {
 </script>
 
 <style>
-/* Tus estilos CSS aquí */
 #title {
   color: #eeeeee;
   text-shadow: 2px 2px 2px #e15fed, -2px -2px 2px #246260;

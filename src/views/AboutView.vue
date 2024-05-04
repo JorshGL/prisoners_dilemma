@@ -11,13 +11,14 @@
     </div>
     <div class="relative mt-7">
       <div
-        class="absolute bg-gradient-to-r from-pink-400 to-blue-400 inset-0 rounded-xl blur-md mx-40 lg:mx-28"
+        class="absolute bg-gradient-to-r from-pink-400 to-blue-400 inset-0 rounded-xl blur-md mx-14 sm:mx-40 lg:mx-28"
       ></div>
-      <div class="relative bg-zinc-900 rounded-xl mx-40 lg:mx-28 pb-10">
+      <div
+        class="relative bg-zinc-900 rounded-xl mx-14 sm:mx-40 lg:mx-28 pb-10 mb-16"
+      >
         <Acknowledgements />
       </div>
     </div>
-
     <div>
       <Footer />
     </div>
