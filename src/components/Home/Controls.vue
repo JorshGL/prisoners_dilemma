@@ -1,9 +1,10 @@
 <template>
-  <div class="grid grid-cols-1 items-center gap-2 md:flex md:flex-col">
-    <!-- Div controls -->
+  <div class="grid grid-cols-1 row-start-2 items-center gap-2 md:flex md:flex-col">
+    <!-- Grafica div -->
     <div
-      class="row-start-1 md:flex md:flex-col space-y-2 items-center justify-center text-center"
+      class="row-start-2 md:flex md:flex-col space-y-2 items-center justify-center text-center"
     >
+      <!-- texto "Porcentaje%" -->
       <div class="font-semibold w-full md:text-xl text-sm">
         {{ lang.wernerParameter }}:
         <!-- iput Porcentaje -->
@@ -29,8 +30,10 @@
         id="entanglementSlider"
       />
     </div>
+
+    <!-- div Buttons characters -->
     <div
-      class="m-5 row-start-2 h-full text-center flex flex-col justify-center"
+      class="m-5 row-start-1 md:row-start-2 h-full text-center flex flex-col justify-center"
     >
       <!-- Selecciona tu estrategia -->
       <span class="text-sm font-semibold md:col-span-2 md:text-xl">{{
@@ -115,7 +118,7 @@
       </div>
     </div>
 
-    <!--  -->
+    <!--  Cantidad Rondas-->
     <div
       class="font-semibold col-start-1 col-span-2 text-center m-2 gap-0 items-center justify-center md:gap-2 md:flex md:flex-col md:span-2"
     >
