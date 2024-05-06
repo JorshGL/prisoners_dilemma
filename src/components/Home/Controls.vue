@@ -5,7 +5,7 @@
       class="row-start-2 md:flex md:flex-col space-y-2 items-center justify-center text-center md:m-3"
     >
       <!-- texto "Porcentaje%" -->
-      <div class="font-semibold w-full md:text-xl text-sm">
+      <div class="font-semibold w-full md:text-lg text-sm ">
         {{ lang.wernerParameter }}:
         <!-- iput Porcentaje -->
         <input
@@ -36,7 +36,7 @@
       class="m-5 row-start-1 md:row-start-2 h-full text-center flex flex-col justify-center"
     >
       <!-- Selecciona tu estrategia -->
-      <span class="text-sm font-semibold md:col-span-2 md:text-xl">{{
+      <span class="text-sm font-semibold md:col-span-2 md:text-lg">{{
         lang.buttonsTitle
       }}</span>
 
