@@ -18,7 +18,7 @@
       >
         <!-- Img Personaje A -->
         <img
-          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto h-3/4"
+          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto md:h-3/4 h-fit"
           :src="data.playerA.sprite"
         />
       </div>
@@ -31,7 +31,7 @@
       >
         <!-- Img Personaje B -->
         <img
-          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto h-3/4"
+          class="hover:scale-105 transition duration-300 ease-in-out w-24 md:w-auto md:h-3/4 h-fit"
           :src="data.playerB.sprite"
         />
       </div>
