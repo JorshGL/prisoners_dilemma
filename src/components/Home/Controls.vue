@@ -2,7 +2,7 @@
   <div class="grid grid-cols-1 row-start-2 items-center gap-2 md:flex md:flex-col">
     <!-- Grafica div -->
     <div
-      class="row-start-2 md:flex md:flex-col space-y-2 items-center justify-center text-center"
+      class="row-start-2 md:flex md:flex-col space-y-2 items-center justify-center text-center md:m-3"
     >
       <!-- texto "Porcentaje%" -->
       <div class="font-semibold w-full md:text-xl text-sm">
@@ -18,7 +18,7 @@
         %
       </div>
       <!-- Dimensiones Graph -->
-      <div class="md:h-40 md:w-40">
+      <div class="md:h-40 md:w-40 lg:w-56 lg:h-56">
         <Graph :entanglementParameter="wernerParameter" />
       </div>
       <input
